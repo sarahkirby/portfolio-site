@@ -1,0 +1,89 @@
+:root {
+  font-size: 10px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 5.6rem 0 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-family: 'Gilroy-Light', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    font-size: 1.6rem;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 1rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  transition: all .6s ease;
+}
+
+button,
+a {
+  &:focus {
+    outline: 1px dotted lighten($navy, 40%);
+  }
+}
+
+ul,
+ol,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-family: 'Zefani';
+  font-size: $h1-fs;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: $h2-fs;
+}
+
+h3,
+.h3 {
+  font-size: $h3-fs;
+}
+
+h4 {
+  font-size: $h4-fs;
+}
+
+h5 {
+  font-size: $h5-fs;
+}
+
+h6 {
+  font-size: $h6-fs;
+}
+
+@media screen and (min-width: 768px) {
+  .app {
+    margin-left: $nav-logo-w;
+  }
+}
