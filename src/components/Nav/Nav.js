@@ -1,6 +1,7 @@
-import React from "react"
-import {NavLink} from "react-router-dom"
-import SocialIcons from "components/SocialIcons/SocialIcons"
+import React from 'react'
+import {NavLink} from 'react-router-dom'
+import {CSSTransition} from 'react-transition-group'
+import SocialIcons from 'components/SocialIcons/SocialIcons'
 
 class Nav extends React.Component {
   state = {
@@ -34,7 +35,12 @@ class Nav extends React.Component {
           </button>
         </div>
 
-        {toggle && (
+        <CSSTransition
+          in={toggle}
+          timeout={350}
+          classNames="fade-35"
+          unmountOnExit
+        >
           <nav>
             <ul>
               <li>
@@ -59,7 +65,34 @@ class Nav extends React.Component {
               <li><a href="www.google.com">Contact</a></li>
             </ul>
           </nav>
-        )}
+        </CSSTransition>
+
+        {/* {toggle && (
+          <nav>
+            <ul>
+              <li>
+                <NavLink
+                  activeClassName="active"
+                  to="/home"
+                  onClick={e => this.toggleMenu(e)}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  activeClassName="active"
+                  to="/about"
+                  onClick={e => this.toggleMenu(e)}
+                >
+                  About
+                </NavLink>
+              </li>
+              <li><a href="www.google.com">Work</a></li>
+              <li><a href="www.google.com">Contact</a></li>
+            </ul>
+          </nav>
+        )} */}
 
         <SocialIcons />
       </header>

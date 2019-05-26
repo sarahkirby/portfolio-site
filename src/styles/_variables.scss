@@ -1,24 +1,31 @@
+// Colour
 $white:      #ffffff;
 $grey-300:   #f8f8f8;
 $grey-400:   #f2f2f2;
 $navy:       #0F4154;
 $gold:       #AD8838;
+$black:      #4d4d4d;
+
+$enrichme:   lighten($navy, 10%); // #dd3e24;
+$bcito:      #0066cc;
+$fwaste:     #dd4359;
+
+$copper-1: #A66B56; 
+$copper-2: #AD5138;
 
 
+// Typography
 $h1-fs:      4.2rem;
 $h2-fs:      3.5rem;
 $h3-fs:      2.25rem;
 $h4-fs:      1.75rem;
 $h5-fs:      1.31rem;
 $h6-fs:      1rem;
+$body-fs-xs: 1.5rem;
+$body-fs-l: 1rem;
 
 
-// Header
-$nav-logo-w:    5rem;
-
-// $h1-fs:      6.734rem; // 67px // 4.2em
-// $h2-fs:      5.52rem; // 55px // 3.5rem
-// $h3-fs:      3.790rem; // 37px  // 2.25rem
-// $h4-fs:      2.843rem; // 28px // 1.75rem
-// $h5-fs:      2.133rem; // 21px // 1.31rem
-// $h6-fs:      1.6rem; // 16px // 1rem 
+// Layout / Spacing
+$spacing-xs: 2.4rem;
+$spacing-l: 5rem;
+$img-block-w: 85%;

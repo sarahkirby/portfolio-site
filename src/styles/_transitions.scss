@@ -1,0 +1,87 @@
+.route-transition {
+  position: absolute;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% - #{$spacing-l});
+  }
+}
+
+.fade-35 {
+  &-enter {
+    opacity: 0;
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transition: opacity 350ms ease;
+  }
+
+  &-exit {
+    opacity: 1;
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transition: opacity 350ms ease;
+  }
+}
+
+.fade {
+  &-enter {
+    opacity: 0;
+
+    .fade-in {
+      opacity: 0;
+    }
+  }
+
+  &-enter-active {
+    opacity: 1;
+
+    .fade-in {
+      opacity: 1;
+      transition: opacity 250ms;
+      transition-delay: 1000ms;
+    }
+  }
+
+  &-exit,
+  &-exit-active {
+    opacity: 0;
+  }
+}
+
+.route-transition-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $black;
+  pointer-events: none;
+  transform: translateX(-100%);
+  z-index: 999;
+}
+
+.fade-enter,
+.fade-enter-active,
+.fade-exit,
+.fade-exit-active {
+  .route-transition-animation {
+    animation: 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+    animation-name: routeTransition;
+  }
+}
+
+@keyframes routeTransition {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

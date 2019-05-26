@@ -1,9 +1,9 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import { BrowserRouter, Route } from "react-router-dom";
-import "./index.scss"
-import App from "pages/app"
-import * as serviceWorker from "./serviceWorker"
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Route } from 'react-router-dom';
+import './index.scss'
+import App from 'pages/app'
+import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
   <BrowserRouter>

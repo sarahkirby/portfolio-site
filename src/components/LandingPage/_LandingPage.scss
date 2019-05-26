@@ -1,0 +1,64 @@
+.landing-page {
+  height: 70vh;
+  background-color: $grey-300;
+
+  &-text {
+    padding: 0 $spacing-xs;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 45%;
+    color: $black;
+
+    p {
+      font-size: $h4-fs;
+    }
+  }
+
+  .img-block {
+    position: relative;
+    height: 55%;
+    width: 100%;
+    background-color: $grey-400;
+
+    .img {
+      height: 100%;
+      background-color: $navy;
+    }
+  }
+
+  // Mobile - landscape
+  @media screen and (min-width: 568px) {
+    height: 100vh;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: $spacing-l;
+
+    &-text {
+      padding-left: 5rem;
+    }
+
+    .img {
+      position: absolute;
+      top: 0;
+      right: -#{$spacing-l};
+      width: $img-block-w;
+    }
+  }
+
+  // iPad portrait
+  @media screen and (min-width: 768px) and (min-height: 1024px) {
+    height: 50vh;
+  }
+
+  @media screen and (min-width: 1024px) {
+    height: 100vh;
+    &-text {
+      p {
+        font-size: $h5-fs;
+      }
+    }
+  }
+}

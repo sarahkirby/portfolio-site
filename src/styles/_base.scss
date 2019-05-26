@@ -13,6 +13,7 @@ body {
   font-family: 'Gilroy-Light', sans-serif;
   font-weight: 400;
   line-height: 1.4;
+  color: $black;
   @media screen and (min-width: 768px) {
     margin-top: 0;
     font-size: 1.6rem;
@@ -56,9 +57,10 @@ h6 {
 
 h1 {
   margin-top: 0;
-  font-family: 'Zefani';
+  font-family: 'Zefani', sans-serif;
   font-size: $h1-fs;
   font-weight: normal;
+  letter-spacing: .1rem;
 }
 
 h2 {
@@ -84,6 +86,6 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .app {
-    margin-left: $nav-logo-w;
+    margin-left: $spacing-l;
   }
 }

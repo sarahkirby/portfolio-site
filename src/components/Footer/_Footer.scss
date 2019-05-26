@@ -1,0 +1,56 @@
+footer {
+  padding: 3.2rem $spacing-xs;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  background-color: $navy;
+  color: $white;
+
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  h5 {
+    margin-bottom: .8rem;
+    opacity: .8;
+    font-size: $h4-fs;
+  }
+
+  a {
+    margin-right: 2rem;
+    color: $white;
+    opacity: .8;
+    letter-spacing: .05rem;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  i {
+    margin-right: 1rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: $spacing-xs $spacing-l;
+    flex-direction: row;
+
+    .container {
+      margin-top: .2rem;
+    }
+
+    h5 {
+      margin: 0 2rem 0 0;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    h5 {
+      font-size: $h5-fs;
+    }
+
+    i {
+      margin-right: .5rem;
+    }
+  }
+}

@@ -1,7 +1,10 @@
 @import "/styles/variables";
 @import "styles/fonts";
 @import "styles/base";
+@import "styles/transitions";
 
 @import "components/Nav/Nav";
 @import "components/LandingPage/LandingPage";
+@import "components/Works/Works";
 @import "components/SocialIcons/SocialIcons";
+@import "components/Footer/Footer";
