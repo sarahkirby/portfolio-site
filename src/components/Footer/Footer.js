@@ -10,9 +10,9 @@ const Footer = props => (
         sk.irby@icloud.com
       </a>
 
-      <a href="+4407562781121">
+      <a href="tel:+447562781121">
         <i className="fas fa-mobile-alt" />
-        + 44 07562 781121
+        + 44 7562 781121
       </a>
 
       {/* <a href="#">
