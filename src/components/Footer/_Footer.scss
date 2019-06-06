@@ -1,4 +1,4 @@
-footer {
+.footer {
   padding: 3.2rem $spacing-xs;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@ footer {
   background-color: $navy;
   color: $white;
 
-  .container {
+  &-container {
     display: flex;
     align-items: baseline;
   }
@@ -35,7 +35,7 @@ footer {
     padding: $spacing-xs $spacing-l;
     flex-direction: row;
 
-    .container {
+    &-container {
       margin-top: .2rem;
     }
 

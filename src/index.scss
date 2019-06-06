@@ -1,6 +1,7 @@
-@import "/styles/variables";
+@import "styles/variables";
 @import "styles/fonts";
 @import "styles/base";
+@import "styles/helpers";
 @import "styles/transitions";
 
 @import "components/Nav/Nav";
@@ -8,3 +9,7 @@
 @import "components/Works/Works";
 @import "components/SocialIcons/SocialIcons";
 @import "components/Footer/Footer";
+@import "components/CaseStudy/Header";
+@import "components/CaseStudy/Context";
+@import "components/CaseStudy/BrowserMockup";
+@import "components/CaseStudy/MobileMockup";

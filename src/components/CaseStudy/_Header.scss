@@ -1,0 +1,55 @@
+.header {
+    height: 70vh;
+    background-color: $site-bgc;
+  
+    &-title {
+      padding: 0 $spacing-xs;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      height: 35%;
+      color: $black;
+    }
+  
+    .img-block {
+      position: relative;
+      height: 65%;
+      width: 100%;
+
+      .img {
+        height: 100%;
+        background-color: $navy;
+      }
+    }
+  
+    // Mobile - landscape
+    @media screen and (min-width: 568px) {
+      height: 100vh;
+    }
+  
+    @media screen and (min-width: 768px) {
+      margin-right: $spacing-l;
+  
+      &-title {
+        padding-left: 5rem;
+      }
+    }
+  
+    // iPad portrait
+    @media screen and (min-width: 768px) and (min-height: 1024px) {
+      height: 50vh;
+    }
+  
+    @media screen and (min-width: 1024px) {
+      height: 100vh;
+
+      &-title {
+        height: 45%;
+      }
+
+      .img-block {
+        height: 55%;
+      }
+    }
+  }

@@ -1,0 +1,36 @@
+.mobile-mockup {
+  display: flex;
+  justify-content: center;
+  padding: $spacing-l;
+
+  &-container {
+    margin: 0 $spacing-xs / 2;
+    max-width: 30%;
+    flex-grow: 1;
+  }
+
+  &-screen {
+    position: relative;
+    padding-top: 568px / 320px * 100%;
+    border-radius: 2px;
+    box-shadow: $box-shadow-img;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: 100%;
+    }
+
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: $spacing-l;
+
+    &-m {
+      width: 50%;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .works {
   padding: $spacing-xs;
-  background-color: $grey-300;
+  background-color: $site-bgc;
 
   @media screen and (min-width: 768px) {
     padding: $spacing-xs $spacing-l 0 0;
@@ -25,10 +25,6 @@
 
   h6 {
     display: inline-block;
-    font-family: 'Brandon Grotesque', sans-serif;
-    font-size: $body-fs-xs;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
   }
 
   .line {
@@ -117,10 +113,6 @@
   }
 
   @media screen and (min-width: 1024px) {
-    h6 {
-      font-size: $h6-fs;
-    }
-
     .img {
       width: auto;
       height: 100%;

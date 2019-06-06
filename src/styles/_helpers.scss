@@ -1,0 +1,25 @@
+// Layout
+.container {
+  background-color: $site-bgc;
+  padding: $spacing-xs;
+
+  @media screen and (min-width: 768px) {
+    margin-right: $spacing-l;
+    padding: calc(#{$spacing-l} / 2) $spacing-l;
+  }
+}
+
+
+// Type
+.subtitle {
+  font-family: 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  color: $navy;
+}
+
+
+// Colour
+.site-bgc {
+  background-color: $site-bgc;
+}

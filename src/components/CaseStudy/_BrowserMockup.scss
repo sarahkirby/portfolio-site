@@ -1,0 +1,58 @@
+.browser-mockup {
+  padding: $spacing-l;
+  background-color: $bcito;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &-screen {
+    position: relative;
+    padding-top: 768px / 1368px * 100%;
+    border-radius: 2px;
+    box-shadow: $box-shadow-img;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &.cropped-center {
+    padding: $spacing-l $spacing-l 0;
+
+    .browser-mockup-screen {
+      padding-top: 668px / 1368px * 100%;
+    }
+  }
+
+  &.cropped-left {
+    padding: $spacing-l 0 0 $spacing-l;
+  }
+
+  &.cropped-right {
+    padding: $spacing-l $spacing-l 0 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: $spacing-l;
+
+    &.w-50 {
+      display: inline-block;
+      width: 50%;
+    }
+
+    &.cropped-center {
+      padding: $spacing-l + 1 $spacing-l + 2 0;
+    }
+
+    &.cropped-left,
+    &.cropped-right {
+      .browser-mockup-screen {
+        padding-top: 768px / 930px * 100%;
+      }
+    }
+  }
+}

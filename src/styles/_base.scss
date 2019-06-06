@@ -9,10 +9,7 @@
 body {
   margin: 5.6rem 0 0;
   padding: 0;
-  font-size: 1.5rem;
-  font-family: 'Gilroy-Light', sans-serif;
-  font-weight: 400;
-  line-height: 1.4;
+  font: 400 1.5rem/1.4 'Gilroy-Light', sans-serif;
   color: $black;
   @media screen and (min-width: 768px) {
     margin-top: 0;
@@ -44,6 +41,7 @@ ol,
 p {
   margin: 0;
   padding: 0;
+  max-width: 40em;
 }
 
 h1,
@@ -57,9 +55,7 @@ h6 {
 
 h1 {
   margin-top: 0;
-  font-family: 'Zefani', sans-serif;
-  font-size: $h1-fs;
-  font-weight: normal;
+  font: normal #{$h1-fs}/1.4 'Zefani', sans-serif;
   letter-spacing: .1rem;
 }
 
@@ -69,7 +65,9 @@ h2 {
 
 h3,
 .h3 {
-  font-size: $h3-fs;
+  font: normal #{$h3-fs}/1.4 'Zefani', sans-serif;
+  letter-spacing: .1rem;
+
 }
 
 h4 {

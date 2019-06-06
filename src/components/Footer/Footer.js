@@ -1,10 +1,10 @@
 import React from 'react'
 
 const Footer = props => (
-  <footer className="fade-in">
+  <footer className="footer fade-in">
     <h5>Want to get in touch?</h5>
 
-    <div className="container">
+    <div className="footer-container">
       <a href="mailto:sk.irby@icloud.com">
         <i className="far fa-envelope" />
         sk.irby@icloud.com

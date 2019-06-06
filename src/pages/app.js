@@ -23,7 +23,7 @@ const App = props => (
             <Route exact path="/" component={Home} />
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/works/enrichme" component={Enrichme} />
+            <Route path="/enrichme" component={Enrichme} />
             <Route component={Error} />
           </Switch>
           <Footer />

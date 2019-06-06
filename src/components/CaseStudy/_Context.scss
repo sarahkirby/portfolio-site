@@ -1,0 +1,55 @@
+.context {
+  &-title {
+    margin-bottom: $spacing-xs / 2;
+  }
+
+  &-about {
+    margin-bottom: $spacing-xs;
+
+    span:first-child {
+      display: block;
+      margin-bottom: calc(#{$spacing-xs} / 2);
+    }
+  }
+
+  &-info {
+    margin-bottom: $spacing-xs;
+
+    .subtitle {
+      margin-bottom: $spacing-xs / 3;
+    }
+  }
+
+  @media screen and (min-width: 568px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 $spacing-xs;
+
+    &-title {
+      grid-column: span 2;
+    }
+
+    &-about {
+      grid-column: span 2;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: $spacing-xs;
+
+    &-title {
+      grid-row: 1 / span 3;
+      grid-column: span 1;
+    }
+
+    &-about {
+      margin-bottom: 0;
+      grid-column: 2 / span 2;
+    }
+
+    &-info {
+      margin-bottom: 0;
+    }
+  }
+}

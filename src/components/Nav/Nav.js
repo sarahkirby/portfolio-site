@@ -67,33 +67,6 @@ class Nav extends React.Component {
           </nav>
         </CSSTransition>
 
-        {/* {toggle && (
-          <nav>
-            <ul>
-              <li>
-                <NavLink
-                  activeClassName="active"
-                  to="/home"
-                  onClick={e => this.toggleMenu(e)}
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  activeClassName="active"
-                  to="/about"
-                  onClick={e => this.toggleMenu(e)}
-                >
-                  About
-                </NavLink>
-              </li>
-              <li><a href="www.google.com">Work</a></li>
-              <li><a href="www.google.com">Contact</a></li>
-            </ul>
-          </nav>
-        )} */}
-
         <SocialIcons />
       </header>
     )

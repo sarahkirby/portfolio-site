@@ -6,6 +6,8 @@ $navy:       #0F4154;
 $gold:       #AD8838;
 $black:      #4d4d4d;
 
+$site-bgc:   $grey-300;
+
 $enrichme:   lighten($navy, 10%); // #dd3e24;
 $bcito:      #0066cc;
 $fwaste:     #dd4359;
@@ -20,12 +22,13 @@ $h2-fs:      3.5rem;
 $h3-fs:      2.25rem;
 $h4-fs:      1.75rem;
 $h5-fs:      1.31rem;
-$h6-fs:      1rem;
-$body-fs-xs: 1.5rem;
-$body-fs-l: 1rem;
+$h6-fs:      calc(13px + .3vw); // 1rem
 
 
 // Layout / Spacing
 $spacing-xs: 2.4rem;
 $spacing-l: 5rem;
 $img-block-w: 85%;
+
+// Shadow
+$box-shadow-img: -3px 34px 69px -1px rgba(0,0,0,0.4);
