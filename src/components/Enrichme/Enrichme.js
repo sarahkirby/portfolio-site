@@ -1,4 +1,5 @@
 import React from 'react'
+import {Helmet} from 'react-helmet'
 import Header from 'components/CaseStudy/Header'
 import Context from 'components/CaseStudy/Context'
 import BrowserMockup from 'components/CaseStudy/BrowserMockup'
@@ -7,6 +8,10 @@ import {enrichme} from 'assets/images/images'
 
 const Enrichme = props => (
   <section className="enrichme">
+    <Helmet>
+      <title>enrichme - Sarah Kirby | Developer & Designer Portfolio</title>
+    </Helmet>
+
     <Header
       title='enrichme'
     />
