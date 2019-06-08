@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Context = props => (
   <section className="context container">
@@ -37,5 +38,13 @@ const Context = props => (
     }
   </section>
 )
+
+Context.propTypes = {
+  about: PropTypes.object,
+  tech: PropTypes.string,
+  date: PropTypes.string,
+  skills: PropTypes.string,
+  visit: PropTypes.string,
+}
 
 export default Context

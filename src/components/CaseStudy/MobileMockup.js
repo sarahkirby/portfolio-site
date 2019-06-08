@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const MobileMockup = props => (
   <section className="mobile-mockup site-bgc">
@@ -17,5 +18,12 @@ const MobileMockup = props => (
     ))}
   </section>
 )
+
+MobileMockup.propTypes = {
+  numberOfScreens: PropTypes.arrayOf(PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
+  })).isRequired
+}
 
 export default MobileMockup

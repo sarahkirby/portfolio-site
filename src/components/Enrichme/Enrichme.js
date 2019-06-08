@@ -34,7 +34,6 @@ const Enrichme = props => (
     />
 
     <BrowserMockup
-      customClass=""
       image={enrichme.lx2}
       alt="testing at the moment"
     />
