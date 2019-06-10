@@ -1,11 +1,11 @@
 import React from 'react'
 import WorkSingle from 'components/Works/WorkSingle'
-import AnimateOnVisible from 'components/Helpers/AnimateOnVisible'
+import AnimateOnScroll from 'components/Helpers/AnimateOnScroll'
 import {enrichme} from 'assets/images/images'
 
 const Works = props => (
-  <main className="works"> 
-    <AnimateOnVisible>
+  <main className="works fade-in"> 
+    <AnimateOnScroll>
       <WorkSingle
         title="enrichme"
         subtitle="View works"
@@ -18,34 +18,34 @@ const Works = props => (
         alt="Four mobile screens displaying screenshots of enrichme's website"
         class="enrichme"
       />
-    </AnimateOnVisible>
+    </AnimateOnScroll>
 
-    <AnimateOnVisible>
+    <AnimateOnScroll>
       <WorkSingle
         title="BCITO"
         subtitle="View work"
         alt="bcito alt"
         class="bcito"
       />
-    </AnimateOnVisible>
+    </AnimateOnScroll>
 
-    <AnimateOnVisible>
+    <AnimateOnScroll>
       <WorkSingle
         title="Biome"
         subtitle="View work"
         alt="biome alt"
         class="biome"
       />
-    </AnimateOnVisible>
+    </AnimateOnScroll>
 
-    <AnimateOnVisible>
+    <AnimateOnScroll>
       <WorkSingle
         title="F Waste"
         subtitle="View work"
         alt="fwaste alt"
         class="fwaste"    
       />
-    </AnimateOnVisible>
+    </AnimateOnScroll>
   </main>
 )
 

@@ -5,7 +5,7 @@ function Animated({inView, children }) {
   return <div className={inView ? 'in' : 'out'}>{children}</div>
 }
 
-function AnimateOnVisible({ children }) {
+function AnimateOnScroll({ children }) {
   const [hasAnimated, setHasAnimated] = useState(false)
 
   const onVisibilityChange = isVisible => {
@@ -16,7 +16,7 @@ function AnimateOnVisible({ children }) {
   return (
     <VisibilitySensor
       onChange={onVisibilityChange}
-      minTopValue={200}
+      minTopValue={300}
       partialVisibility={true}
     >
       {({ isVisible }) => {
@@ -36,6 +36,6 @@ function AnimateOnVisible({ children }) {
   )
 }
 
-export default AnimateOnVisible
+export default AnimateOnScroll
 
 // Code credit: cjpete https://codesandbox.io/s/ppoo7yn5qj

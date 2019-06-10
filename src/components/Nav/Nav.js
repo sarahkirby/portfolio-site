@@ -61,7 +61,15 @@ class Nav extends React.Component {
                   About
                 </NavLink>
               </li>
-              <li><a href="www.google.com">Work</a></li>
+              <li>
+                <NavLink
+                  activeClassName="active"
+                  to="/work"
+                  onClick={e => this.toggleMenu(e)}
+                >
+                  Work
+                </NavLink>
+              </li>
               <li><a href="www.google.com">Contact</a></li>
             </ul>
           </nav>
