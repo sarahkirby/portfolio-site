@@ -6,12 +6,20 @@ const Footer = props => (
 
     <div className="footer-container">
       <a href="mailto:sk.irby@icloud.com">
-        <i className="far fa-envelope" />
+        <i
+          className="far fa-envelope"
+          aria-hidden="true"
+          role="presentation"
+        />
         sk.irby@icloud.com
       </a>
 
       <a href="tel:+447562781121">
-        <i className="fas fa-mobile-alt" />
+        <i
+          className="fas fa-mobile-alt"
+          aria-hidden="true"
+          role="presentation"
+        />
         + 44 7562 781121
       </a>
 

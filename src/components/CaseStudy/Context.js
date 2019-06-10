@@ -4,25 +4,29 @@ import PropTypes from 'prop-types'
 const Context = props => (
   <section className="context container">
 
-    <h3 className="context-title">context</h3>
+    <h3 className="context-title">
+      {props.title}
+    </h3>
+
+    {props.subtitle &&
+      <h4 className={props.customClass}>
+        {props.subtitle}
+      </h4>
+    }
+
     <div className="context-about">
       {props.about}
     </div>
 
-    <div className="context-info">
-      <h6 className="subtitle">Tech</h6>
-      <p>{props.tech}</p>
-    </div>
-
-    <div className="context-info">
-      <h6 className="subtitle">Date</h6>
-      <p>{props.date}</p>
-    </div>
-
-    <div className="context-info">
-      <h6 className="subtitle">Skills</h6>
-      <p>{props.skills}</p>
-    </div>
+    {props.info.map((i, index) => (
+      <div
+        className={`context-info ${props.customClass ? props.customClass : ''}`}
+        key={index}
+      >
+        <h6 className="subtitle">{i.subtitle}</h6>
+        <p>{i.description}</p>
+      </div>
+    ))}
 
     {props.visit &&
       <div className="context-info">
@@ -40,10 +44,11 @@ const Context = props => (
 )
 
 Context.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  customClass: PropTypes.string,
   about: PropTypes.object,
-  tech: PropTypes.string,
-  date: PropTypes.string,
-  skills: PropTypes.string,
+  info: PropTypes.array,
   visit: PropTypes.string,
 }
 

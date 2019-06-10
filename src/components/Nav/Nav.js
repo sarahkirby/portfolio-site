@@ -28,6 +28,7 @@ class Nav extends React.Component {
           <button
             onClick={e => this.toggleMenu(e)}
             className={(toggle ? 'is-active' : '')}
+            aria-label="Menu"
           >
             <span className="btn-bar btn-bar--1" />
             <span className="btn-bar btn-bar--2" />
