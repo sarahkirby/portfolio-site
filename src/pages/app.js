@@ -5,7 +5,7 @@ import Nav from 'components/Nav/Nav'
 import Home from 'pages/home'
 import About from 'pages/about'
 import Works from 'components/Works/Works'
-import Enrichme from 'components/Enrichme/Enrichme'
+import Enrichme from 'pages/works/enrichme'
 import Footer from 'components/Footer/Footer'
 import Error from 'pages/error'
 
@@ -22,7 +22,6 @@ const App = props => (
           <div className="route-transition-animation" />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/work" component={Works} />
             <Route path="/enrichme" component={Enrichme} />

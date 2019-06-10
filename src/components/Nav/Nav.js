@@ -45,9 +45,9 @@ class Nav extends React.Component {
           <nav>
             <ul>
               <li>
-                <NavLink
+                <NavLink exact
                   activeClassName="active"
-                  to="/home"
+                  to="/"
                   onClick={e => this.toggleMenu(e)}
                 >
                   Home
