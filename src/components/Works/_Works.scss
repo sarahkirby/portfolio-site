@@ -18,12 +18,12 @@
     align-items: baseline;
   }
 
-  h1 {
+  .title {
     font-size: $h3-fs;
     letter-spacing: .3rem;
   }
 
-  h6 {
+  .subtitle {
     display: inline-block;
   }
 
@@ -41,30 +41,26 @@
     height: calc(100vw - (#{$spacing-xs} * 2));
     order: -1;
     overflow: hidden;
+    // Delete
+    background-color: $black;
   }
 
   .img {
     width: 100%;
   }
 
-  // Delete
-  .img-fake {
-    height: 100%;
-    background-color: $grey-400;
-  }
-
   &-enrichme {
-    h1,
-    h6 {
+    .title,
+    .subtitle {
       color: $enrichme;
     }
   }
 
-  &-bcito h1 {
+  &-bcito .title {
     color: $bcito;
   }
 
-  &-fwaste h1 {
+  &-fwaste .title {
     color: $fwaste;
   }
 
@@ -90,9 +86,10 @@
       position: absolute;
       top: 20%;
       left: 0;
+      z-index: 1;
     }
 
-    h1 {
+    .title {
       font-size: $h1-fs;
     }
 
@@ -116,6 +113,56 @@
     .img {
       width: auto;
       height: 100%;
+    }
+  }
+}
+
+// Scroll animation
+.out {
+  .work {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+.in {
+  .work {
+    @include fade-in-up(800ms);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .out {
+    .work {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .title,
+    .line,
+    .subtitle {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+
+    .work-img {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  }
+  
+  .in {
+    .title {
+      @include fade-in-up(800ms);
+    }
+
+    .line,
+    .subtitle {
+      @include fade-in-up(1000ms);
+    }
+
+    .work-img {
+      @include fade-in-up(500ms);
     }
   }
 }

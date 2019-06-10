@@ -85,3 +85,10 @@
     transform: translateX(100%);
   }
 }
+
+// Animate on scroll
+@mixin fade-in-up($duration) {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all $duration ease;
+}
