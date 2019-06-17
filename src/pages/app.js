@@ -6,6 +6,8 @@ import Home from 'pages/home'
 import About from 'pages/about'
 import Works from 'components/Works/Works'
 import Enrichme from 'pages/works/enrichme'
+import Fwaste from 'pages/works/fwaste'
+import Bcito from 'pages/works/bcito'
 import Footer from 'components/Footer/Footer'
 import Error from 'pages/error'
 
@@ -25,6 +27,8 @@ const App = props => (
             <Route path="/about" component={About} />
             <Route path="/work" component={Works} />
             <Route path="/enrichme" component={Enrichme} />
+            <Route path="/fwaste" component={Fwaste} />
+            <Route path="/bcito" component={Bcito} />
             <Route component={Error} />
           </Switch>
           <Footer />

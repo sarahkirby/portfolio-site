@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Header = props => (
   <section className="header">
     <div className="header-title">
-      <h1>{props.title}</h1>
+      <h1 className="title">{props.title}</h1>
     </div>
     
     <div className="img-block">

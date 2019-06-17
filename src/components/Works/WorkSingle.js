@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const WorkSingle = props => (
   <section
-    className={`work work-${props.class}`}
+    className={`work ${props.class}`}
   >
     <Link
       to={props.link}

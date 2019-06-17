@@ -7,6 +7,7 @@
   }
 }
 
+// Work Single
 .work {
   padding-bottom: $spacing-xs;
   display: flex;
@@ -20,11 +21,22 @@
 
   .title {
     font-size: $h3-fs;
-    letter-spacing: .3rem;
   }
 
   .subtitle {
     display: inline-block;
+  }
+
+  &.enrichme .subtitle {
+    color: $enrichme;
+  }
+
+  &.bcito .subtitle {
+    color: $bcito;
+  }
+
+  &.fwaste .subtitle {
+    color: $fwaste;
   }
 
   .line {
@@ -47,21 +59,6 @@
 
   .img {
     width: 100%;
-  }
-
-  &-enrichme {
-    .title,
-    .subtitle {
-      color: $enrichme;
-    }
-  }
-
-  &-bcito .title {
-    color: $bcito;
-  }
-
-  &-fwaste .title {
-    color: $fwaste;
   }
 
   @media screen and (min-width: 568px) {

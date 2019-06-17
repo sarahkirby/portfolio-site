@@ -23,7 +23,9 @@ const Works = props => (
     <AnimateOnScroll>
       <WorkSingle
         title="BCITO"
-        link="/enrichme"
+        link="/bcito"
+        imgSx1={bcito.sx1}
+        imgSx2={bcito.sx2}
         imgLx2={bcito.lx2}
         alt="bcito alt"
         class="bcito"
@@ -42,7 +44,7 @@ const Works = props => (
     <AnimateOnScroll>
       <WorkSingle
         title="F Waste"
-        link="/enrichme"
+        link="/fwaste"
         imgLx2={fwaste.lx2}
         alt="fwaste alt"
         class="fwaste"    

@@ -11,11 +11,28 @@
 
 
 // Type
+.title {
+  letter-spacing: .3rem;
+}
+
 .subtitle {
   font-family: 'Brandon Grotesque', sans-serif;
   text-transform: uppercase;
   letter-spacing: .3rem;
   color: $navy;
+}
+
+// Custom colours
+.enrichme .title {
+  color: $enrichme;
+}
+
+.bcito .title {
+  color: $bcito;
+}
+
+.fwaste .title {
+  color: $fwaste;
 }
 
 // Colour
