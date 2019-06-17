@@ -90,5 +90,5 @@
 @mixin fade-in-up($duration) {
   opacity: 1;
   transform: translateY(0);
-  transition: all $duration ease;
+  transition: transform $duration ease, opacity $duration ease;
 }

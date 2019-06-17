@@ -16,9 +16,10 @@
       position: relative;
       height: 65%;
       width: 100%;
+      overflow: hidden;
 
       .img {
-        height: 100%;
+        width: 100%;
         background-color: $navy;
       }
     }
@@ -51,5 +52,14 @@
       .img-block {
         height: 55%;
       }
+    }
+  }
+
+  // Work specific styles
+  // enrichme
+
+  .enrichme {
+    .header-title {
+      color: $enrichme;
     }
   }

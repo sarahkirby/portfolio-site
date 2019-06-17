@@ -17,7 +17,7 @@ class Nav extends React.Component {
     const {toggle} = this.state
     return (
       <header className={'nav ' + (toggle ? 'is-open' : '')}>
-        <NavLink to="/home">
+        <NavLink to="/">
           <h1 className="nav-logo">
             sk
             <span>.</span>

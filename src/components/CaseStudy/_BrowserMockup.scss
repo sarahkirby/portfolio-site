@@ -1,6 +1,5 @@
 .browser-mockup {
   padding: $spacing-l;
-  background-color: $bcito;
   box-sizing: border-box;
   overflow: hidden;
 
@@ -55,4 +54,9 @@
       }
     }
   }
+}
+
+// enrichme
+.enrichme .browser-mockup {
+  background-color: #e7ebee;
 }

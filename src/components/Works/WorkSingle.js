@@ -1,19 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Link} from 'react-router-dom'
 
 const WorkSingle = props => (
   <section
     className={`work work-${props.class}`}
   >
-    <div className="work-text">
+    <Link
+      to={props.link}
+      className="work-text"
+    >
       <h1 className="title">
         {props.title}
       </h1>
       <span className="line"/>
       <h6 className="subtitle">
-        {props.subtitle}
+        View work
       </h6>
-    </div>
+    </Link>
 
     <div className="work-img">
       <picture>
@@ -38,7 +42,7 @@ const WorkSingle = props => (
 
 WorkSingle.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
   imgSx1: PropTypes.string,
   imgSx2: PropTypes.string,
   imgMx1: PropTypes.string,

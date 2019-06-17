@@ -8,7 +8,7 @@ const Header = props => (
     </div>
     
     <div className="img-block">
-      <div className="img"></div>
+      <img className="img" src={props.img} alt={props.alt} />
     </div>
   </section>
 )

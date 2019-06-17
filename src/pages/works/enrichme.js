@@ -7,13 +7,15 @@ import MobileMockup from 'components/CaseStudy/MobileMockup'
 import {enrichme} from 'assets/images/images'
 
 const Enrichme = props => (
-  <section className="enrichme">
+  <section className="enrichme fade-in">
     <Helmet>
       <title>enrichme - Sarah Kirby | Developer & Designer Portfolio</title>
     </Helmet>
 
     <Header
-      title='enrichme'
+      title="enrichme"
+      img={enrichme.lx2}
+      alt="testing atm"
     />
 
     <Context
@@ -46,7 +48,7 @@ const Enrichme = props => (
     />
 
     <BrowserMockup
-      image={enrichme.lx2}
+      image={enrichme.coursesx2}
       alt="testing at the moment"
     />
 
