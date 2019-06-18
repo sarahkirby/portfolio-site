@@ -1,5 +1,5 @@
 .landing-page {
-  height: 70vh;
+  height: 100vh;
   background-color: $site-bgc;
 
   &-text {
@@ -36,8 +36,6 @@
 
   // Mobile - landscape
   @media screen and (min-width: 568px) {
-    height: 100vh;
-
     .img img {
       width: 100%;
       height: auto;
@@ -45,7 +43,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-right: $spacing-l;
     max-height: 700px;
 
     &-text {
@@ -79,7 +76,7 @@
   }
 
   @media screen and (min-width: 1024px) {
-    height: 100vh;
+    margin-right: $spacing-l;
     
     &-text {
       p {

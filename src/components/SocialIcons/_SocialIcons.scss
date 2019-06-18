@@ -18,11 +18,9 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-
   @media screen and (min-width: 1024px) {
+    display: flex;
+
     a {
       font-size: 1.125rem;
     }

@@ -1,7 +1,8 @@
 .mobile-mockup {
+  padding: 0 calc(#{$spacing-l} / 2);
   display: flex;
   justify-content: center;
-  padding: $spacing-l;
+  overflow-y: hidden;
 
   &-container {
     margin: 0 $spacing-xs / 2;
@@ -13,7 +14,6 @@
     position: relative;
     padding-top: 568px / 320px * 100%;
     border-radius: 2px;
-    box-shadow: $box-shadow-img;
     overflow: hidden;
 
     img {
@@ -25,12 +25,17 @@
     }
 
   }
+  @media screen and (max-width: 768px) {
+    &-container {
+      min-width: 40%;
+    }
+  }
 
   @media screen and (min-width: 768px) {
-    margin-right: $spacing-l;
+    padding: $spacing-xs calc(#{$spacing-l} / 2) calc(#{$spacing-l} / 2);
 
-    &-m {
-      width: 50%;
+    &-screen {
+      box-shadow: $box-shadow-20;
     }
   }
 }

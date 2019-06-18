@@ -2,7 +2,7 @@
   padding: $spacing-xs;
   background-color: $site-bgc;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     padding: $spacing-xs $spacing-l 0 0;
   }
 }

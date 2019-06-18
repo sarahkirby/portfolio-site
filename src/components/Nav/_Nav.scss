@@ -128,10 +128,14 @@
   }
 
   // When nav overlay is open
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
+
+    &-logo {
+      font-size: $h3-fs;
+    }
 
     .nav-btn {
       float: none;
@@ -148,16 +152,15 @@
 
     nav {
       justify-content: flex-start;
+
       ul {
         margin-left: 8rem;
         text-align: left;
-      }
-    }
-  }
 
-  @media screen and (min-width: 1024px) {
-    &-logo {
-      font-size: $h3-fs;
+        li {
+          margin-bottom: .25rem;
+        }
+      }
     }
   }
 }

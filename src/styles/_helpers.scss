@@ -2,10 +2,24 @@
 .container {
   background-color: $site-bgc;
   padding: $spacing-xs;
+  box-sizing: border-box;
 
-  @media screen and (min-width: 768px) {
-    margin-right: $spacing-l;
+  @media screen and (min-width: 1024px) {
     padding: calc(#{$spacing-l} / 2) $spacing-l;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mr5-m {
+    margin-right: $spacing-l;
+  }
+
+  .w-40-m {
+    width: 40%;
+  }
+
+  .w-60-m {
+    width: 60%;
   }
 }
 

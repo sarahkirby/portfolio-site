@@ -1,6 +1,5 @@
 .header {
   height: 70vh;
-  background-color: $site-bgc;
   
   &-title {
     padding: 0 $spacing-xs;
@@ -20,7 +19,6 @@
 
     .img {
       width: 100%;
-      background-color: $navy;
     }
   }
   
@@ -30,8 +28,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-right: $spacing-l;
-
     &-title {
       padding-left: 5rem;
     }

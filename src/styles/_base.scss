@@ -13,10 +13,9 @@ body {
   font: 400 1.6rem/1.6 'Gilroy-Light', sans-serif;
   letter-spacing: .016em;
   color: $black;
-  @media screen and (min-width: 768px) {
-    margin-top: 0;
-  }
+
   @media screen and (min-width: 1024px) {
+    margin-top: 0;
     font-size: 1rem;
   }
 }
@@ -83,7 +82,7 @@ h6 {
   font-size: $h6-fs;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .app {
     margin-left: $spacing-l;
   }

@@ -1,3 +1,21 @@
+// Two column layout
+.browser-col-2 {
+  margin-top: 1rem;
+
+  .browser-mockup {
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  
+    .browser-mockup {
+      width: calc(50% - .5rem);
+    }
+  }
+}
+
 .browser-mockup {
   padding: $spacing-l;
   box-sizing: border-box;
@@ -5,17 +23,35 @@
 
   &-screen {
     position: relative;
-    padding-top: 768px / 1368px * 100%;
     border-radius: 2px;
-    box-shadow: $box-shadow-img;
+    box-shadow: $box-shadow-40;
     overflow: hidden;
 
-    img {
+    img,
+    video {
       position: absolute;
       top: 0;
       left: 0;
+    }
+
+    img {
       width: auto;
       height: 100%;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+
+    // Aspect ratio for video
+    &.video {
+      padding-top: 680px / 1368px * 100%;
+    }
+
+    // Aspect ratio for image
+    &.image {
+      padding-top: 768px / 1368px * 100%;
     }
   }
 
@@ -23,7 +59,7 @@
     padding: $spacing-l $spacing-l 0;
 
     .browser-mockup-screen {
-      padding-top: 668px / 1368px * 100%;
+      padding-top: 568px / 1368px * 100%;
     }
   }
 
@@ -35,20 +71,15 @@
     padding: $spacing-l $spacing-l 0 0;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-right: $spacing-l;
-
-    &.w-50 {
-      display: inline-block;
-      width: 50%;
-    }
-
+  @media screen and (min-width: 1024px) {
     &.cropped-center {
       padding: $spacing-l + 1 $spacing-l + 2 0;
     }
 
     &.cropped-left,
     &.cropped-right {
+      margin-right: 0;
+      
       .browser-mockup-screen {
         padding-top: 768px / 930px * 100%;
       }
