@@ -12,7 +12,7 @@ const BrowserMockup = props => (
       }
 
       {props.video &&
-        <video autoPlay loop>
+        <video preload="auto" autoPlay muted loop playsInline>
           <source src={props.video} type="video/mp4" />
           <p>This browser does not support the video element.</p>
         </video>
