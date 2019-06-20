@@ -1,11 +1,11 @@
 .mobile-mockup {
-  padding: 0 calc(#{$spacing-l} / 2);
+  padding: $spacing-xs calc(#{$spacing-l} / 2) calc(#{$spacing-l} / 2);
   display: flex;
   justify-content: center;
-  overflow-y: hidden;
+  overflow: hidden;
 
   &-container {
-    margin: 0 $spacing-xs / 2;
+    margin: $spacing-xs / 2;
     max-width: 30%;
     flex-grow: 1;
   }
@@ -20,22 +20,19 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: auto;
-      height: 100%;
+      width: 100%;
+      height: auto;
     }
 
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 568px) {
     &-container {
       min-width: 40%;
     }
   }
+}
 
-  @media screen and (min-width: 768px) {
-    padding: $spacing-xs calc(#{$spacing-l} / 2) calc(#{$spacing-l} / 2);
-
-    &-screen {
-      box-shadow: $box-shadow-20;
-    }
-  }
+// enrichme
+.enrichme .mobile-mockup {
+  background-color: $enrichme-bg;
 }

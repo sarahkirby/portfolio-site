@@ -43,7 +43,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-height: 700px;
+    // max-height: 700px;
 
     &-text {
       padding-left: 5rem;
@@ -71,9 +71,9 @@
   }
 
   // iPad portrait
-  @media screen and (min-width: 768px) and (min-height: 1024px) {
-    height: 50vh;
-  }
+  // @media screen and (min-width: 768px) and (min-height: 1024px) {
+  //   height: 50vh;
+  // }
 
   @media screen and (min-width: 1024px) {
     margin-right: $spacing-l;

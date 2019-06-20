@@ -4,20 +4,36 @@
 
   .browser-mockup {
     margin-bottom: 1rem;
+
+    &.cropped-center {
+      padding: $spacing-l $spacing-xs 0;
+
+      .browser-mockup-screen {
+        padding-top: 968px / 1368px * 100%;
+        box-shadow: -3px 34px 39px -1px rgba(0, 0, 0, 0.3);
+      }
+    }
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
   
     .browser-mockup {
-      width: calc(50% - .5rem);
+      padding: 3rem;
+      width: 50%;
+
+      &.cropped-center:first-child {
+        padding: $spacing-l $spacing-l / 2 0 $spacing-l;
+      }
+      &.cropped-center:nth-child(2) {
+        padding: $spacing-l $spacing-l 0 $spacing-l / 2;
+      }
     }
   }
 }
 
 .browser-mockup {
-  padding: $spacing-l;
+  padding: $spacing-l $spacing-xs;
   box-sizing: border-box;
   overflow: hidden;
 
@@ -35,8 +51,8 @@
     }
 
     img {
-      width: auto;
-      height: 100%;
+      width: 100%;
+      height: auto;
     }
 
     video {
@@ -56,38 +72,70 @@
   }
 
   &.cropped-center {
-    padding: $spacing-l $spacing-l 0;
+    padding: $spacing-l $spacing-l / 2 0;
 
     .browser-mockup-screen {
-      padding-top: 568px / 1368px * 100%;
+      padding-top: 310px / 1368px * 100%;
     }
   }
 
   &.cropped-left {
-    padding: $spacing-l 0 0 $spacing-l;
+    padding: $spacing-l 0 0 calc(#{$spacing-l} * 2);
   }
 
   &.cropped-right {
-    padding: $spacing-l $spacing-l 0 0;
+    padding: $spacing-l calc(#{$spacing-l} * 2) 0 0;
+  }
+
+  &.cropped-left,
+  &.cropped-right {
+    margin: 0 #{-$spacing-xs};
+
+    .browser-mockup-screen {
+      padding-top: 768px / 930px * 100%;
+    }
+  }
+
+  @media screen and (min-width: 568px) {
+    padding: $spacing-l;
+
+    // Prevent image getting too big
+    &.cropped-left,
+    &.cropped-right {
+      max-width: 60rem;
+    }
+
+    &.cropped-left {
+      margin-left: auto;
+    }
+
+    &.cropped-right {
+      margin-right: auto;
+    }
   }
 
   @media screen and (min-width: 1024px) {
     &.cropped-center {
-      padding: $spacing-l + 1 $spacing-l + 2 0;
+      padding: $spacing-l $spacing-l 0;
+    }
+
+    &.cropped-left {
+      padding: $spacing-l 0 0 $spacing-l;
+    }
+  
+    &.cropped-right {
+      padding: $spacing-l $spacing-l 0 0;
     }
 
     &.cropped-left,
     &.cropped-right {
-      margin-right: 0;
-      
-      .browser-mockup-screen {
-        padding-top: 768px / 930px * 100%;
-      }
+      margin: 0;
+      max-width: none;
     }
   }
 }
 
 // enrichme
 .enrichme .browser-mockup {
-  background-color: #e7ebee;
+  background-color: $enrichme-bg;
 }

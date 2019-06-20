@@ -4,14 +4,28 @@ import PropTypes from 'prop-types'
 const BrowserMockup = props => (
   <section className={`browser-mockup ${props.customClass ? props.customClass : ''}`}>
     <div className={`browser-mockup-screen ${props.type}`}>
-      {props.image &&
-        <img
-          src={props.image}
-          alt={props.alt}
-        />
+      {props.type === 'image' &&
+        <picture>
+          {props.imgXl &&
+            <source
+              media="(min-width: 1024px)"
+              srcSet={`${props.imgL}, ${props.imgXl} 2x`}
+            />
+          }
+          <source
+            media="(min-width: 568px)"
+            srcSet={`${props.imgM}, ${props.imgL} 2x`}
+          />
+          <img
+            src={props.imgS}
+            srcSet={`${props.imgM} 2x`}
+            className="img"
+            alt={props.alt}
+          />
+        </picture>
       }
 
-      {props.video &&
+      {props.type === 'video' &&
         <video preload="auto" autoPlay muted loop playsInline>
           <source src={props.video} type="video/mp4" />
           <p>This browser does not support the video element.</p>
@@ -23,7 +37,10 @@ const BrowserMockup = props => (
 
 BrowserMockup.propTypes = {
   customClass: PropTypes.string,
-  image: PropTypes.string,
+  imgS: PropTypes.string,
+  imgM: PropTypes.string,
+  imgL: PropTypes.string,
+  imgXl: PropTypes.string,
   video: PropTypes.string,
   alt: PropTypes.string,
   type: PropTypes.string.isRequired,

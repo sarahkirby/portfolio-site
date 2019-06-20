@@ -2,13 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Description = props => (
-  <div className="description container">
-    <div className={`description-text ${props.customClass ? props.customClass : ''}`}>
-      <h4>{props.title}</h4>
+  <div className={`description container ${props.customClass ? props.customClass : ''}`}>
+    <div className="description-text">
+      <h3>{props.title}</h3>
       <p>{props.description}</p>
     </div>
 
-    {props.children}
+    {props.children &&
+      <div className="description-img">
+        {props.children}
+      </div>
+    }
   </div>
 )
 

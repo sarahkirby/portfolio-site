@@ -1,34 +1,69 @@
 .description {
+  padding-bottom: 0;
+
   &-text {
     margin: calc(#{$spacing-l} - 2.4rem) 0 $spacing-l;
   
-    h4 {
+    h3 {
       margin-bottom: calc(#{$spacing-xs /2});
     }
   }
 
   @media screen and (min-width: 1024px) {
+    padding-bottom: $spacing-l / 2;
     padding-right: 0;
     display: flex;
     align-items: center;
 
-    &-text {
-      &.w-40-m {
-        margin-right: $spacing-l;
+    // Description text with image, two columns
+    &.block-description-img--r,
+    &.block-description-img--l {
+      .description-text {
+        width: 40%;
       }
-  
-      &.w-100 {
-        margin: 0 $spacing-l 0 0;
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-        grid-gap: 0 $spacing-l;
 
-        h4 {
-          margin-bottom: 0;
-        }
+      .description-img {
+        width: 60%;
       }
+    }
+
+    // Image on the right
+    &.block-description-img--r .description-text {
+      margin-right: $spacing-l;
+    }
+
+    // Image on the left
+    &.block-description-img--l {
+      padding-right: $spacing-l;
+      padding-left: 0;
+
+      .description-text {
+        margin-left: $spacing-l;
+        order: 2;
+      }
+    }
+  
+    // Full width description, two columns
+    &.w-100 .description-text {
+      margin: 0 $spacing-l 0 0;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-gap: 0 $spacing-l;
+
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1260px) {
+    &.w-100 .description-text {
+      padding-bottom: $spacing-l / 2;
     }
   }
 }
 
-
+// enrichme
+.enrichme .description-img {
+  background-color: $enrichme-bg;
+}

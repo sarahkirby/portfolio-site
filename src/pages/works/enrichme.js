@@ -49,31 +49,39 @@ const Enrichme = props => (
     />
 
     <BrowserMockup
-      image={enrichme.homePagex2}
+      imgS={enrichme.findACourse_s}
+      imgM={enrichme.findACourse_m}
+      imgL={enrichme.findACourse_l}
+      imgXl={enrichme.findACourse_xl}
       alt="testing at the moment"
       type="image"
     />
 
     <Description
-      title="Browse courses with ease"
+      title="Browse with ease"
       description="Roll overs provide additional information so you can decided whether you're interested in a course before clicking through."
-      customClass="w-40-m"
+      customClass="block-description-img--r"
     >
       <BrowserMockup
-        video={enrichme.courseCard}
-        customClass="cropped-left w-60-m"
-        type="video"
+        imgS={enrichme.courseCard_s}
+        imgM={enrichme.courseCard_m}
+        imgL={enrichme.courseCard_l}
+        customClass="cropped-left"
+        type="image"
       />
     </Description>
 
     <Description
-      title="Manage courses all in one place"
+      title="All in one place"
       description="Roll overs provide additional information so you can decided whether you're interested in a course or not before clicking through."
       customClass="w-100"
     />
 
     <BrowserMockup
-      image={enrichme.homePagex2}
+      imgS={enrichme.yourCoursesMenu_s}
+      imgM={enrichme.yourCoursesMenu_m}
+      imgL={enrichme.yourCoursesMenu_l}
+      imgXl={enrichme.yourCoursesMenu_xl}
       alt="testing at the moment"
       customClass="cropped-center"
       type="image"
@@ -82,44 +90,23 @@ const Enrichme = props => (
     
     <div className="browser-col-2">
       <BrowserMockup
-        image={enrichme.homePagex2}
+        imgS={enrichme.yourCourses_s}
+        imgM={enrichme.yourCourses_m}
+        imgL={enrichme.yourCourses_l}
         alt="testing at the moment"
+        customClass="cropped-center"
         type="image"
       />
 
       <BrowserMockup
-        image={enrichme.homePagex2}
+        imgS={enrichme.manageCourse_s}
+        imgM={enrichme.manageCourse_m}
+        imgL={enrichme.manageCourse_l}
         alt="testing at the moment"
+        customClass="cropped-center"
         type="image"
       />
     </div>
-
-    <Description
-      title=" The web app experience"
-      description="Roll overs provide additional information so you can decided whether you're interested in a course or not before clicking through."
-      customClass="w-100"
-    />
-
-    <MobileMockup
-      numberOfScreens={[
-        {
-          image: `${enrichme.sx1}`,
-          alt: "testing at the moment"
-        },
-        {
-          image: `${enrichme.sx1}`,
-          alt: "testing at the moment"
-        },
-        {
-          image: `${enrichme.sx1}`,
-          alt: "testing at the moment"
-        },
-        {
-          image: `${enrichme.sx1}`,
-          alt: "testing at the moment"
-        }
-      ]}
-    />
 
     <Context
       title="challenges"
@@ -153,6 +140,77 @@ const Enrichme = props => (
     <BrowserMockup
       video={enrichme.createCourse}
       type="video"
+    />
+
+    <BrowserMockup
+      video={enrichme.createCourse2}
+      type="video"
+      customClass="pt0"
+    />
+
+    <Description
+      title="Illustrations"
+      description="Roll overs provide additional information so you can decided whether you're interested in a course or not before clicking through."
+      customClass="block-description-img--r"
+    >
+      <BrowserMockup
+        imgS={enrichme.scream_s}
+        imgM={enrichme.scream_m}
+        imgL={enrichme.scream_l}
+        alt="testing at the moment"
+        customClass="cropped-right"
+        type="image"
+      />
+    </Description>
+
+    <Description
+      title="Fun experience"
+      description="Roll overs provide additional information so you can decided whether you're interested in a course or not before clicking through."
+      customClass="block-description-img--l"
+    >
+      <BrowserMockup
+        imgS={enrichme.sliderCropped_s}
+        imgM={enrichme.sliderCropped_m}
+        imgL={enrichme.sliderCropped_l}
+        alt="testing at the moment"
+        customClass="cropped-right"
+        type="image"
+      />
+    </Description>
+
+    <Description
+      title="Responsive design"
+      description="Roll overs provide additional information so you can decided whether you're interested in a course or not before clicking through."
+      customClass="w-100"
+    />
+
+    <MobileMockup
+      numberOfScreens={[
+        {
+          imgS: `${enrichme.mobile2_s}`,
+          imgM: `${enrichme.mobile2_m}`,
+          imgL: `${enrichme.mobile2_l}`,
+          alt: "testing at the moment"
+        },
+        {
+          imgS: `${enrichme.mobile3_s}`,
+          imgM: `${enrichme.mobile3_m}`,
+          imgL: `${enrichme.mobile3_l}`,
+          alt: "testing at the moment"
+        },
+        {
+          imgS: `${enrichme.mobile1_s}`,
+          imgM: `${enrichme.mobile1_m}`,
+          imgL: `${enrichme.mobile1_l}`,
+          alt: "testing at the moment"
+        },
+        {
+          imgS: `${enrichme.mobile4_s}`,
+          imgM: `${enrichme.mobile4_m}`,
+          imgL: `${enrichme.mobile4_l}`,
+          alt: "testing at the moment"
+        },
+      ]}
     />
   </section>
 )

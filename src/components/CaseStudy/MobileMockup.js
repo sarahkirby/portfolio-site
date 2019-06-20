@@ -9,10 +9,18 @@ const MobileMockup = props => (
         key={index}
       >
         <div className="mobile-mockup-screen" key={index}>
-          <img
-            src={screen.image}
-            alt={screen.alt}
-          />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcSet={`${screen.imgM}, ${screen.imgL} 2x`}
+            />
+            <img
+              src={screen.imgS}
+              srcSet={`${screen.imgM} 2x`}
+              className="img"
+              alt={screen.alt}
+            />
+          </picture>
         </div>
       </div>
     ))}
@@ -21,7 +29,9 @@ const MobileMockup = props => (
 
 MobileMockup.propTypes = {
   numberOfScreens: PropTypes.arrayOf(PropTypes.shape({
-    image: PropTypes.string.isRequired,
+    imgS: PropTypes.string.isRequired,
+    imgM: PropTypes.string.isRequired,
+    imgL: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
   })).isRequired
 }
