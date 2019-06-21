@@ -8,17 +8,19 @@
 
   &-container {
     display: flex;
+    flex-direction: column;
     align-items: baseline;
   }
 
   h5 {
-    margin-bottom: .8rem;
+    margin-bottom: $spacing-xs / 2;
     opacity: .8;
     font-size: $h4-fs;
   }
 
   a {
     margin-right: 2rem;
+    margin-bottom: 1rem;
     color: $white;
     opacity: .8;
     letter-spacing: .05rem;
@@ -29,6 +31,21 @@
 
   i {
     margin-right: 1rem;
+    min-width: 1.6rem;
+  }
+
+  @media screen and (min-width: 568px) {
+    &-container {
+      flex-direction: row;
+    }
+
+    a {
+      margin-bottom: 0;
+    }
+
+    i {
+      min-width: auto;
+    }
   }
 
   @media screen and (min-width: 768px) {
