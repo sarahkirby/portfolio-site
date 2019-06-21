@@ -187,6 +187,12 @@ const Enrichme = props => (
     <MobileMockup
       numberOfScreens={[
         {
+          imgS: `${enrichme.mobile4_s}`,
+          imgM: `${enrichme.mobile4_m}`,
+          imgL: `${enrichme.mobile4_l}`,
+          alt: "testing at the moment"
+        },
+        {
           imgS: `${enrichme.mobile2_s}`,
           imgM: `${enrichme.mobile2_m}`,
           imgL: `${enrichme.mobile2_l}`,
@@ -203,13 +209,7 @@ const Enrichme = props => (
           imgM: `${enrichme.mobile1_m}`,
           imgL: `${enrichme.mobile1_l}`,
           alt: "testing at the moment"
-        },
-        {
-          imgS: `${enrichme.mobile4_s}`,
-          imgM: `${enrichme.mobile4_m}`,
-          imgL: `${enrichme.mobile4_l}`,
-          alt: "testing at the moment"
-        },
+        }
       ]}
     />
   </section>

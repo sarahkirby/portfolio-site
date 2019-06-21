@@ -7,6 +7,7 @@ import coverMx1 from 'assets/images/cover-mx1.jpg'
 import coverMx2 from 'assets/images/cover-mx2.jpg'
 import coverLx1 from 'assets/images/cover-lx1.jpg'
 import coverLx2 from 'assets/images/cover-lx2.jpg'
+import me from 'assets/images/sarah-kirby.png'
 
 export {
   enrichme,
@@ -18,4 +19,5 @@ export {
   coverMx2,
   coverLx1,
   coverLx2,
+  me,
 }

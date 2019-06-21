@@ -22,11 +22,6 @@ const Footer = props => (
         />
         + 44 7562 781121
       </a>
-
-      {/* <a href="#">
-        <i className="fas fa-download"></i>
-        Curriculum Vitae
-      </a> */}
     </div>
   </footer>
 )

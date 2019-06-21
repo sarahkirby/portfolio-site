@@ -1,0 +1,89 @@
+// About page
+.about {
+  min-height: 100vh;
+
+  &-info {
+    padding-top: $spacing-l;
+  }
+
+  h1 {
+    margin-bottom: $spacing-xs / 2;
+
+    span {
+      color: $gold;
+    }
+  }
+
+  p {
+    margin-bottom: $spacing-xs / 2;
+
+    &:last-of-type {
+      margin-bottom: $spacing-xs;
+    }
+  }
+
+  b {
+    font-size: 2rem;
+  }
+
+  .btn {
+    margin-bottom: $spacing-xs;
+    display: inline-block;
+  }
+
+  &-visual {
+    background-color: #1e1f1f;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    p {
+      margin-bottom: $spacing-xs / 3;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-page .nav .nav-btn .btn-bar {
+    background-color: $gold;
+    opacity: .8;
+  }
+
+  .about {
+    display: flex;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-bottom: $spacing-xs / 4;
+      font-size: $h2-fs;
+    }
+
+    b {
+      font-size: $h5-fs;
+    }
+
+    &-visual {
+      position: relative;
+      max-width: 40vw;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        bottom: 0;
+        left: -50px;
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}

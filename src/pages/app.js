@@ -12,7 +12,7 @@ import Footer from 'components/Footer/Footer'
 import Error from 'pages/error'
 
 const App = props => (
-  <div className="app">
+  <div className={`app ${props.location.pathname === '/about' ? 'about-page' : ''}`}>
     <Nav />
     <TransitionGroup>
       <CSSTransition
