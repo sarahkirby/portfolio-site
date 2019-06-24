@@ -1,35 +1,37 @@
 // Colour
-$white:      #ffffff;
-$grey-300:   #f8f8f8;
-$grey-400:   #f2f2f2;
-$navy:       #0F4154;
-$gold:       #AD8838;
-$black:      #4d4d4d;
+$white:       #ffffff;
+$grey-300:    #f8f8f8;
+$grey-400:    #f2f2f2;
+$navy:        #0F4154;
+$gold:        #AD8838;
+$black:       #4d4d4d;
 
-$site-bgc:   $grey-300;
+$site-bgc:    $grey-300;
 
-$enrichme:   #3f8fa8; // #dd3e24;
+$enrichme:    #3f8fa8; // #dd3e24;
 $enrichme-bg: #e7ebee;
-$bcito:      #0066cc;
-$fwaste:     #dd4359;
+$bcito:       #0066cc;
+$bcito-bg:    #d4dde6;
+$fwaste:      #dd4359;
 
-$copper-1: #A66B56; 
-$copper-2: #AD5138;
+$copper-1:    #A66B56; 
+$copper-2:    #AD5138;
 
 
 // Typography
-$h1-fs:      4.2rem;
-$h2-fs:      3.5rem;
-$h3-fs:      2.25rem;
-$h4-fs:      1.75rem;
-$h5-fs:      1.31rem;
-$h6-fs:      calc(13px + .3vw); // 1rem
+$h1-fs:       4.2rem;
+$h2-fs:       3.5rem;
+$h3-fs:       2.25rem;
+$h4-fs:       1.75rem;
+$h5-fs:       1.31rem;
+$h6-fs:       calc(13px + .3vw); // 1rem
 
 
 // Layout / Spacing
-$spacing-xs: 2.4rem;
-$spacing-l: 5rem;
+$spacing-xs:  2.4rem;
+$spacing-l:   5rem;
 $img-block-w: 85%;
+
 
 // Shadow
 $box-shadow-20: -3px 10px 30px -1px rgba(0, 0, 0, 0.2);

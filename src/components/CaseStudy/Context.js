@@ -23,7 +23,9 @@ const Context = props => (
         className={`context-info ${props.customClass ? props.customClass : ''}`}
         key={index}
       >
-        <h6 className="subtitle">{i.subtitle}</h6>
+        {i.subtitle &&
+          <h6 className="subtitle">{i.subtitle}</h6>
+        }
         <p>{i.description}</p>
       </div>
     ))}

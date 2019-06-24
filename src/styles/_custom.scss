@@ -61,6 +61,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      width: 60vw;
     }
 
     h1 {
@@ -74,7 +75,7 @@
 
     &-visual {
       position: relative;
-      max-width: 40vw;
+      width: 40vw;
       overflow: hidden;
 
       img {
@@ -85,5 +86,20 @@
         height: 100%;
       }
     }
+  }
+}
+
+// CaseStudy - Full width image
+.bcito .full-width-img {
+  padding: $spacing-xs / 2;
+  background-color: $bcito-bg;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (min-width: 568px) {
+    padding: $spacing-l / 2;
   }
 }

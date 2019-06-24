@@ -32,6 +32,25 @@
   }
 }
 
+// Custom BCITO (placing above `.browser-mockup` due to specificity issues, bleh).
+// Adjusting the aspect ratio of browser screens
+.bcito {
+  .browser-mockup {
+    background-color: $bcito-bg;
+
+    &-screen {
+      &.video,
+      &.image {
+        padding-top: 870px / 1368px * 100%;
+      }
+    }
+
+    @media screen and (min-width: 568px) {
+      padding: $spacing-l $spacing-l + 1rem;
+    }
+  }
+}
+
 .browser-mockup {
   padding: $spacing-l $spacing-xs;
   box-sizing: border-box;
