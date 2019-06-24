@@ -66,7 +66,6 @@ const bcito = {
   supervisorDash_m,
   supervisorDash_l,
   supervisorDash_xl,
-  approvingEvidence,
 }
 
 export default bcito
