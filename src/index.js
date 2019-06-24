@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Route } from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom'
 import './index.scss'
+import GAListener from 'components/Helpers/GAListener'
 import ScrollToTop from 'components/Helpers/ScrollToTop'
 import App from 'pages/app'
 import * as serviceWorker from './serviceWorker'
@@ -9,7 +10,7 @@ import * as serviceWorker from './serviceWorker'
 ReactDOM.render(
   <BrowserRouter>
     <ScrollToTop>
-      <Route path="/" component={App} />
+      <Route path="/" component={GAListener(App)} />
     </ScrollToTop>
   </BrowserRouter>,
 document.getElementById("root"))
