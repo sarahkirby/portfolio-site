@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import GoogleAnalytics from 'react-ga'
 
-GoogleAnalytics.initialize(process.env.GA_KEY)
+GoogleAnalytics.initialize('UA-142710330-1')
 
 const GAListener = (WrappedComponent, options = {}) => {
   const trackPage = page => {
