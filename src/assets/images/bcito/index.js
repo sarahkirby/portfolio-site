@@ -31,6 +31,8 @@ import supervisorDash_s from 'assets/images/bcito/supervisor-dash-s.jpg'
 import supervisorDash_m from 'assets/images/bcito/supervisor-dash-m.jpg'
 import supervisorDash_l from 'assets/images/bcito/supervisor-dash-l.jpg'
 import supervisorDash_xl from 'assets/images/bcito/supervisor-dash-xl.jpg'
+import overview from 'assets/images/bcito/overview.mp4'
+import overview_m from 'assets/images/bcito/overview-m.jpg'
 
 const bcito = {
   sx1,
@@ -66,6 +68,8 @@ const bcito = {
   supervisorDash_m,
   supervisorDash_l,
   supervisorDash_xl,
+  overview,
+  overview_m,
 }
 
 export default bcito

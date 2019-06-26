@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Header = props => (
-  <section className="header">
+  <div className="header">
     <div className="header-title">
       <h1 className="title">{props.title}</h1>
     </div>
@@ -10,7 +10,7 @@ const Header = props => (
     <div className="img-block">
       <img className="img" src={props.img} alt={props.alt} />
     </div>
-  </section>
+  </div>
 )
 
 Header.propTypes = {

@@ -1,17 +1,29 @@
 .description {
-  padding-bottom: 0;
-
   &-text {
-    margin: calc(#{$spacing-l} - 2.4rem) 0 $spacing-l;
-  
+    margin: $spacing-l 0;
+
     h3 {
       margin-bottom: calc(#{$spacing-xs /2});
     }
   }
 
+  &-img {
+    margin: $spacing-xs 0;
+  }
+
+  @media screen and (min-width: 568px) {
+    &.block-description-img--r .description-img {
+      margin: $spacing-xs 0 $spacing-xs calc(-#{$spacing-xs});
+    }
+
+    &.block-description-img--l .description-img {
+      margin: $spacing-xs calc(-#{$spacing-xs}) $spacing-xs 0;
+    }
+  }
+
   @media screen and (min-width: 1024px) {
-    padding-bottom: $spacing-l / 2;
-    padding-right: 0;
+    margin-bottom: $spacing-l / 2;
+    margin-right: 0;
     display: flex;
     align-items: center;
 
@@ -23,6 +35,7 @@
       }
 
       .description-img {
+        margin: 0;
         width: 60%;
       }
     }
@@ -34,8 +47,8 @@
 
     // Image on the left
     &.block-description-img--l {
-      padding-right: $spacing-l;
-      padding-left: 0;
+      margin-right: $spacing-l;
+      margin-left: 0;
 
       .description-text {
         margin-left: $spacing-l;
@@ -45,7 +58,7 @@
   
     // Full width description, two columns
     &.w-100 .description-text {
-      margin: 0 $spacing-l 0 0;
+      margin: $spacing-xs / 2 $spacing-l $spacing-xs / 2 0;
       display: grid;
       grid-template-columns: 1fr 1.5fr;
       grid-gap: 0 $spacing-l;
@@ -55,15 +68,14 @@
       }
     }
   }
-
-  @media screen and (min-width: 1260px) {
-    &.w-100 .description-text {
-      padding-bottom: $spacing-l / 2;
-    }
-  }
 }
 
 // enrichme
 .enrichme .description-img {
   background-color: $enrichme-bg;
+}
+
+// enrichme
+.bcito .description-img {
+  background-color: $bcito-bg;
 }

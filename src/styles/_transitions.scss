@@ -58,7 +58,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: $black;
   pointer-events: none;
   transform: translateX(-100%);
   z-index: 999;
@@ -84,11 +83,4 @@
   to {
     transform: translateX(100%);
   }
-}
-
-// Animate on scroll
-@mixin fade-in-up($duration) {
-  opacity: 1;
-  transform: translateY(0);
-  transition: transform $duration ease, opacity $duration ease;
 }

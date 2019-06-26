@@ -46,7 +46,9 @@ import sliderCropped_s from 'assets/images/enrichme/slider-cropped-s.jpg'
 import sliderCropped_m from 'assets/images/enrichme/slider-cropped-m.jpg'
 import sliderCropped_l from 'assets/images/enrichme/slider-cropped-l.jpg'
 import createCourse from 'assets/images/enrichme/create-a-course.mp4'
+import createCourse_m from 'assets/images/enrichme/create-a-course-m.jpg'
 import createCourse2 from 'assets/images/enrichme/create-a-course-2.mp4'
+import createCourse2_m from 'assets/images/enrichme/create-a-course-2-m.jpg'
 
 const enrichme = {
   sx1,
@@ -97,7 +99,9 @@ const enrichme = {
   sliderCropped_m,
   sliderCropped_l,
   createCourse,
+  createCourse_m,
   createCourse2,
+  createCourse2_m,
 }
 
 export default enrichme

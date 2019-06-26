@@ -9,9 +9,16 @@
 
 // Work Single
 .work {
-  padding-bottom: $spacing-xs;
+  margin-bottom: $spacing-xs;
   display: flex;
   flex-direction: column;
+
+  // &.enrichme:hover {
+  //   .title,
+  //   .subtitle {
+  //     color: darken($enrichme, 20%);
+  //   }
+  // }
 
   &-text {
     display: flex;
@@ -27,16 +34,44 @@
     display: inline-block;
   }
 
-  &.enrichme .subtitle {
-    color: $enrichme;
+  // Custom colour and hover state
+  &.enrichme {
+    .subtitle {
+      color: $enrichme;
+    }
+
+    .work-text:hover {
+      .title,
+      .subtitle {
+        color: darken($enrichme, 10%);
+      }
+    }
   }
 
-  &.bcito .subtitle {
-    color: $bcito;
+  &.bcito {
+    .subtitle {
+      color: $bcito;
+    }
+
+    .work-text:hover {
+      .title,
+      .subtitle {
+        color: darken($bcito, 10%);
+      }
+    }
   }
 
-  &.fwaste .subtitle {
-    color: $fwaste;
+  &.fwaste {
+    .subtitle {
+      color: $fwaste;
+    }
+
+    .work-text:hover {
+      .title,
+      .subtitle {
+        color: darken($fwaste, 10%);
+      }
+    }
   }
 
   .line {
@@ -124,7 +159,9 @@
 
 .in {
   .work {
-    @include fade-in-up(800ms);
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 800ms ease, opacity 800ms ease;
   }
 }
 
@@ -149,17 +186,25 @@
   }
   
   .in {
+    .title,
+    .line,
+    .subtitle,
+    .work-img {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     .title {
-      @include fade-in-up(800ms);
+      transition: transform 800ms ease, opacity 800ms ease, color 300ms ease;
     }
 
     .line,
     .subtitle {
-      @include fade-in-up(1000ms);
+      transition: transform 1000ms ease, opacity 1000ms ease, color 300ms ease;
     }
 
     .work-img {
-      @include fade-in-up(500ms);
+      transition: transform 500ms ease, opacity 500ms ease;
     }
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = props => (
-  <footer className="footer fade-in">
+  <footer id="contact" className="footer fade-in">
     <h5>Want to get in touch?</h5>
 
     <div className="footer-container">

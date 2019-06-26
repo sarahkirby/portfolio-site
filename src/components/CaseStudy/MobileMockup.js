@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const MobileMockup = props => (
-  <section className="mobile-mockup site-bgc">
+  <div className="mobile-mockup site-bgc">
     {props.numberOfScreens.map((screen, index) => (
       <div
         className="mobile-mockup-container"
@@ -24,7 +24,7 @@ const MobileMockup = props => (
         </div>
       </div>
     ))}
-  </section>
+  </div>
 )
 
 MobileMockup.propTypes = {

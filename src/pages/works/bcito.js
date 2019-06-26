@@ -162,6 +162,13 @@ const Bcito = props => (
         type="image"
       />
     </Description>
+
+    <BrowserMockup
+      video={bcito.overview}
+      imgM={bcito.overview_m}
+      alt="testing"
+      type="video"
+    />
   </section>
 )
 

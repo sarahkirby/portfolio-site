@@ -71,7 +71,14 @@ class Nav extends React.Component {
                   Work
                 </NavLink>
               </li>
-              <li><a href="www.google.com">Contact</a></li>
+              <li>
+                <a
+                  href="#contact"
+                  onClick={e => this.toggleMenu(e)}
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </nav>
         </CSSTransition>

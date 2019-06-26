@@ -1,11 +1,10 @@
 // Layout
 .container {
-  background-color: $site-bgc;
-  padding: $spacing-xs;
+  margin: $spacing-xs;
   box-sizing: border-box;
 
   @media screen and (min-width: 1024px) {
-    padding: calc(#{$spacing-l} / 2) $spacing-l;
+    margin: calc(#{$spacing-l} / 2) $spacing-l;
   }
 }
 

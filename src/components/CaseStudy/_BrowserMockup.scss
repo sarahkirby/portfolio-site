@@ -19,6 +19,7 @@
     display: flex;
   
     .browser-mockup {
+      margin-bottom: 0;
       padding: 3rem;
       width: 50%;
 
@@ -108,8 +109,6 @@
 
   &.cropped-left,
   &.cropped-right {
-    margin: 0 #{-$spacing-xs};
-
     .browser-mockup-screen {
       padding-top: 768px / 930px * 100%;
     }

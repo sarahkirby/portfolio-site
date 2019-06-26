@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const BrowserMockup = props => (
-  <section className={`browser-mockup ${props.customClass ? props.customClass : ''}`}>
+  <div className={`browser-mockup ${props.customClass ? props.customClass : ''}`}>
     <div className={`browser-mockup-screen ${props.type}`}>
       {props.type === 'image' &&
         <picture>
@@ -28,11 +28,12 @@ const BrowserMockup = props => (
       {props.type === 'video' &&
         <video preload="auto" autoPlay muted loop playsInline>
           <source src={props.video} type="video/mp4" />
+          <img src={props.imgM} alt={props.alt} />
           <p>This browser does not support the video element.</p>
         </video>
       }
     </div>
-  </section>
+  </div>
 )
 
 BrowserMockup.propTypes = {

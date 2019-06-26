@@ -8,7 +8,7 @@ import MobileMockup from 'components/CaseStudy/MobileMockup'
 import {enrichme} from 'assets/images/images'
 
 const Enrichme = props => (
-  <section className="enrichme fade-in mr5-m site-bgc">
+  <main className="enrichme fade-in mr5-m site-bgc">
     <Helmet>
       <title>enrichme - Sarah Kirby | Developer & Designer Portfolio</title>
     </Helmet>
@@ -16,7 +16,7 @@ const Enrichme = props => (
     <Header
       title="enrichme"
       img={enrichme.lx2}
-      alt="testing atm"
+      alt="Four mobiles on a 45 degree angle display various screens from enrichme's UI, such as an error page, commission slider and creating a course."
     />
 
     <Context
@@ -53,7 +53,7 @@ const Enrichme = props => (
       imgM={enrichme.findACourse_m}
       imgL={enrichme.findACourse_l}
       imgXl={enrichme.findACourse_xl}
-      alt="testing at the moment"
+      alt="Desktop UI of enrichme's 'Find a course' page. It displays three courses in a tile like design. The courses include weaving and painting. There is also a filter function whereby you can filter by location or creative medium."
       type="image"
     />
 
@@ -66,6 +66,7 @@ const Enrichme = props => (
         imgS={enrichme.courseCard_s}
         imgM={enrichme.courseCard_m}
         imgL={enrichme.courseCard_l}
+        alt="A detailed close up of a course tile on the 'Find a course' page. It shows the tile's hover state, a roll over with additional information about the course, such as when the next class is and the creative medium."
         customClass="cropped-left"
         type="image"
       />
@@ -73,7 +74,7 @@ const Enrichme = props => (
 
     <Description
       title="All in one place"
-      description="Roll overs provide additional information so you can decided whether you're interested in a course or not before clicking through."
+      description="With the ability to both run and attend courses, we needed a simple interface where you could manage either of the two. The navigation follows the same pattern, whether you select 'courses you are running' or 'courses you are booked to attend', the subnav lets you select either upcoming or past course information."
       customClass="w-100"
     />
 
@@ -82,7 +83,7 @@ const Enrichme = props => (
       imgM={enrichme.yourCoursesMenu_m}
       imgL={enrichme.yourCoursesMenu_l}
       imgXl={enrichme.yourCoursesMenu_xl}
-      alt="testing at the moment"
+      alt="A close up of the menu on the 'Your courses' dashboard. It's full width, white and consumes a third of the browser window. The title is blue along with the text of the currently selected item."
       customClass="cropped-center"
       type="image"
     />
@@ -93,7 +94,7 @@ const Enrichme = props => (
         imgS={enrichme.yourCourses_s}
         imgM={enrichme.yourCourses_m}
         imgL={enrichme.yourCourses_l}
-        alt="testing at the moment"
+        alt="Desktop UI of the 'Your courses' dashboard, with 'Courses you are booked to attend' and 'Past bookings' selected. Displayed under the menu are four courses such as, art, photography, brewing classes laid out in a tile design."
         customClass="cropped-center"
         type="image"
       />
@@ -102,7 +103,7 @@ const Enrichme = props => (
         imgS={enrichme.manageCourse_s}
         imgM={enrichme.manageCourse_m}
         imgL={enrichme.manageCourse_l}
-        alt="testing at the moment"
+        alt="Desktop UI of the 'Your courses' dashboard, displaying the UI for managing Art classes. At the top is an overview of the price per person, number of bookings and total income and underneath an accordion for each class being run that displays the date, time and number of people booked."
         customClass="cropped-center"
         type="image"
       />
@@ -118,7 +119,7 @@ const Enrichme = props => (
           Enrichme’s target audience are women in their 50’s - 60’s, who sometimes find navigating a website challenging if it isn’t intuitive.
         </span>
         <span>
-          Previously to list a course on enrichme our users had to fill out a form and provide details about their course, such as the name, when it is being run, dates and times etc. They found this experience confusing and couldn’t visualise the outcome of what they were doing.
+          Previously to list a course on enrichme our users had to fill out a form and provide details about their course, such as the name, when it is being run, dates and times etc. They found this experience confusing and couldn’t visualise the outcome of what they were doing.&nbsp;
         </span>
         <span>
           As listing a course is important to the success of enrichme, we got the help of a UX Designer to help design an interface our users could understand.
@@ -132,47 +133,51 @@ const Enrichme = props => (
         },
         {
           subtitle: "Skills",
-          description: "Work closely with UX designer, web design, front-end development",
+          description: "Work closely with UX designer, Web design, Front-end development",
         },
       ]}
     />
 
     <BrowserMockup
       video={enrichme.createCourse}
+      imgM={enrichme.createCourse_m}
+      alt="Enrichme's create a course page. The UI shows the ability to upload a background image, add a title, name of tutor, and add a location."
       type="video"
     />
 
     <BrowserMockup
       video={enrichme.createCourse2}
+      imgM={enrichme.createCourse2_m}
+      alt="Enrichme's create a course page with information filled in. The background image is a close up of stationary neatly laid out on a blue table."
       type="video"
       customClass="pt0"
     />
 
     <Description
-      title="Illustrations"
-      description="Roll overs provide additional information so you can decided whether you're interested in a course or not before clicking through."
+      title="Fun experience"
+      description="If a user stumbles across a page error, we didn’t want them to feel frustrated and leave our site. Given the creative freedom, I was able to come up with a playful concept that our audience could relate to. Check out the mobile version of error page below."
       customClass="block-description-img--r"
     >
       <BrowserMockup
         imgS={enrichme.scream_s}
         imgM={enrichme.scream_m}
         imgL={enrichme.scream_l}
-        alt="testing at the moment"
+        alt="Digital illustration/adaptation of Edvard Munch's Scream painting"
         customClass="cropped-right"
         type="image"
       />
     </Description>
 
     <Description
-      title="Fun experience"
-      description="Roll overs provide additional information so you can decided whether you're interested in a course or not before clicking through."
+      title="Illustrations"
+      description="To remove barriers for on boarding users, enrichme adopted a ‘Pay what you can’ business model. To engage users I created an interactive commission slider. As the commission rate increases, the illustration changes to reflect our gratitude for their generosity."
       customClass="block-description-img--l"
     >
       <BrowserMockup
         imgS={enrichme.sliderCropped_s}
         imgM={enrichme.sliderCropped_m}
         imgL={enrichme.sliderCropped_l}
-        alt="testing at the moment"
+        alt="Digital illustration of a man and woman dancing around a campfire"
         customClass="cropped-right"
         type="image"
       />
@@ -180,7 +185,7 @@ const Enrichme = props => (
 
     <Description
       title="Responsive design"
-      description="Roll overs provide additional information so you can decided whether you're interested in a course or not before clicking through."
+      description="The experience and visual design of enrichme has been specifically built to be enjoyed on mobile through to desktop."
       customClass="w-100"
     />
 
@@ -190,29 +195,29 @@ const Enrichme = props => (
           imgS: `${enrichme.mobile4_s}`,
           imgM: `${enrichme.mobile4_m}`,
           imgL: `${enrichme.mobile4_l}`,
-          alt: "testing at the moment"
+          alt: "Mobile UI of enrichme's sign up form."
         },
         {
           imgS: `${enrichme.mobile2_s}`,
           imgM: `${enrichme.mobile2_m}`,
           imgL: `${enrichme.mobile2_l}`,
-          alt: "testing at the moment"
+          alt: "Mobile UI of enrichme's error page, which is a playful adaptation of Edvard Munch's Scream painting. The scream character is shocked that something has gone wrong."
         },
         {
           imgS: `${enrichme.mobile3_s}`,
           imgM: `${enrichme.mobile3_m}`,
           imgL: `${enrichme.mobile3_l}`,
-          alt: "testing at the moment"
+          alt: "Mobile UI of enrichme's commission rate calculator. The UI includes a slider to adjust the commission rate, as the rate increases the illustration changes. The current illustration shows a man and woman roasting marshmallows around a campfire."
         },
         {
           imgS: `${enrichme.mobile1_s}`,
           imgM: `${enrichme.mobile1_m}`,
           imgL: `${enrichme.mobile1_l}`,
-          alt: "testing at the moment"
+          alt: "Mobile UI of enrichme's create a course page. The UI shows the ability to upload a background image, add a title, name of tutor, and add a location."
         }
       ]}
     />
-  </section>
+  </main>
 )
 
 export default Enrichme
