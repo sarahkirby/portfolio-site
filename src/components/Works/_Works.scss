@@ -13,13 +13,6 @@
   display: flex;
   flex-direction: column;
 
-  // &.enrichme:hover {
-  //   .title,
-  //   .subtitle {
-  //     color: darken($enrichme, 20%);
-  //   }
-  // }
-
   &-text {
     display: flex;
     justify-content: space-between;
@@ -113,7 +106,7 @@
     justify-content: flex-end;
 
     &-text {
-      margin-left: calc(#{$spacing-l} - 2rem);
+      margin-left: $spacing-l - 2rem;
       display: block;
       position: absolute;
       top: 20%;

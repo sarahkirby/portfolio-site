@@ -3,21 +3,21 @@
     margin: $spacing-l 0;
 
     h3 {
-      margin-bottom: calc(#{$spacing-xs /2});
+      margin-bottom: $spacing-xs / 2;
     }
   }
 
   &-img {
-    margin: $spacing-xs 0;
+    margin: $spacing-xs #{-$spacing-xs};
   }
 
   @media screen and (min-width: 568px) {
     &.block-description-img--r .description-img {
-      margin: $spacing-xs 0 $spacing-xs calc(-#{$spacing-xs});
+      margin: $spacing-xs 0 $spacing-xs #{-$spacing-xs};
     }
 
     &.block-description-img--l .description-img {
-      margin: $spacing-xs calc(-#{$spacing-xs}) $spacing-xs 0;
+      margin: $spacing-xs #{-$spacing-xs} $spacing-xs 0;
     }
   }
 
@@ -75,7 +75,7 @@
   background-color: $enrichme-bg;
 }
 
-// enrichme
+// bcito
 .bcito .description-img {
   background-color: $bcito-bg;
 }

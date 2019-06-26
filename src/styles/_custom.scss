@@ -3,7 +3,7 @@
   min-height: 100vh;
 
   &-info {
-    padding-top: $spacing-l;
+    padding: $spacing-l $spacing-xs;
   }
 
   h1 {
@@ -18,7 +18,7 @@
     margin-bottom: $spacing-xs / 2;
 
     &:last-of-type {
-      margin-bottom: $spacing-xs;
+      margin-bottom: 0;
     }
   }
 
@@ -58,6 +58,7 @@
     display: flex;
 
     &-info {
+      padding: $spacing-l $spacing-l $spacing-xs;
       display: flex;
       flex-direction: column;
       justify-content: center;

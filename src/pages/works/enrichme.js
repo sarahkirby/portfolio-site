@@ -141,14 +141,12 @@ const Enrichme = props => (
     <BrowserMockup
       video={enrichme.createCourse}
       imgM={enrichme.createCourse_m}
-      alt="Enrichme's create a course page. The UI shows the ability to upload a background image, add a title, name of tutor, and add a location."
       type="video"
     />
 
     <BrowserMockup
       video={enrichme.createCourse2}
       imgM={enrichme.createCourse2_m}
-      alt="Enrichme's create a course page with information filled in. The background image is a close up of stationary neatly laid out on a blue table."
       type="video"
       customClass="pt0"
     />

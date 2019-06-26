@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Context = props => (
-  <section className="context container">
+  <section className="context">
 
     <h3 className="context-title">
       {props.title}

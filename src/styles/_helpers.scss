@@ -4,7 +4,7 @@
   box-sizing: border-box;
 
   @media screen and (min-width: 1024px) {
-    margin: calc(#{$spacing-l} / 2) $spacing-l;
+    margin: $spacing-l / 2 $spacing-l;
   }
 }
 
