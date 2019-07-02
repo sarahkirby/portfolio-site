@@ -16,7 +16,7 @@ const Bcito = props => (
     <Header
       title="BCITO"
       img={bcito.lx2}
-      alt="testing atm"
+      alt="A light blue background with a white desktop computer displays the file library UI from the BCITO application."
     />
 
     <Context
@@ -52,6 +52,7 @@ const Bcito = props => (
       imgM={bcito.supervisorDash_xl}
       imgL={bcito.supervisorDash_xl}
       imgXl={bcito.supervisorDash_xl}
+      alt="Desktop UI of the dashboard page. It welcomes the user Tabitha (a supervisor). Here she can browse through a list of her students to view their work/progress."
       type="image"
     />
 
@@ -87,14 +88,14 @@ const Bcito = props => (
         <img
           src={bcito.apprenticeDash_s}
           srcSet={`${bcito.apprenticeDash_m} 2x`}
-          alt="testing atm"
+          alt="Desktop and mobile UI of the dashboard page. It welcomes the user Johnny (an apprentice). Here he can quickly access his overview and evidence pages, as well as upload evidence."
         />
       </picture>
     </div>
 
     <Description
       title="Mobile first"
-      description="Roll overs provide additional information so you can decided whether you're interested in a course or not before clicking through."
+      description="Because not all apprentices own computers, it was important the application could work seamlessly on mobile devices. The below UI is based on the ‘Mahara mobile’ app and demonstrates how an apprentice might upload and tag a piece of evidence from their mobile."
       customClass="w-100"
     />
 
@@ -104,38 +105,39 @@ const Bcito = props => (
           imgS: `${bcito.mobileOne_s}`,
           imgM: `${bcito.mobileOne_m}`,
           imgL: `${bcito.mobileOne_l}`,
-          alt: "testing at the moment"
+          alt: "Customised version of the Mahara mobile UI. Large blue buttons allow the user to quickly upload evidence."
         },
         {
           imgS: `${bcito.mobileTwo_s}`,
           imgM: `${bcito.mobileTwo_m}`,
           imgL: `${bcito.mobileTwo_l}`,
-          alt: "testing at the moment"
+          alt: "Mahara mobile pending uploads screen shows an image of a builder hammering nails. Blue buttons show edit, delete and upload to your Mahara."
         },
         {
           imgS: `${bcito.mobileThree_s}`,
           imgM: `${bcito.mobileThree_m}`,
           imgL: `${bcito.mobileThree_l}`,
-          alt: "testing at the moment"
+          alt: "Mahara mobile details screen shows a title, description and tags input that can be edited and saved."
         },
         {
           imgS: `${bcito.mobileFour_s}`,
           imgM: `${bcito.mobileFour_m}`,
           imgL: `${bcito.mobileFour_l}`,
-          alt: "testing at the moment"
+          alt: "Mahara mobile pending uploads screen. The asset 'johnny-img.jpg' is ready to be uploaded to his Mahara file library. A blue button reads 'upload to your Mahara'."
         },
       ]}
     />
 
     <Description
       title="File Library"
-      description="Roll overs provide additional information so you can decided whether you're interested in a course before clicking through."
+      description="Once an apprentice uploads a piece of evidence, it shows up in their file library. This is a place where they can spend time editing and tagging evidence to the relevant skill set they are working towards. To avoid the scroll of death, a filtering system provides an easy way to find evidence."
       customClass="block-description-img--r"
     >
       <BrowserMockup
         imgS={bcito.fileLibraryCropped_s}
         imgM={bcito.fileLibraryCropped_m}
         imgL={bcito.fileLibraryCropped_l}
+        alt="A cropped view of the file library UI. The title reads Carpentry by Johnny. Underneath the title is filtering options, followed by individual assets laid out in a tile like design."
         customClass="cropped-left"
         type="image"
       />
@@ -146,18 +148,20 @@ const Bcito = props => (
       imgM={bcito.fileLibrary_m}
       imgL={bcito.fileLibrary_l}
       imgXl={bcito.fileLibrary_xl}
+      alt="Desktop view of the file library showing the detailed asset view. When a piece of evidence is selected, a draw like modal slides in from the right. The evidence is a picture of a builder hammering nails."
       type="image"
     />
 
     <Description
       title="Overview"
-      description="Roll overs provide additional information so you can decided whether you're interested in a course before clicking through."
+      description="Evidence that’s ready for assessment can be submitted to the apprentice’s Smart Evidence page. This provides a visual overview of their progress towards achieving each skill set. This is where supervisors can approve evidence, leave feedback through comments and sign off skill sets when the criteria has been met."
       customClass="block-description-img--l"
     >
       <BrowserMockup
         imgS={bcito.overviewCropped_s}
         imgM={bcito.overviewCropped_m}
         imgL={bcito.overviewCropped_l}
+        alt="Cropped view of the smart evidence page. The title displays Carpentry by Johnny. The skillset 'Tools and equipment of the trade' has four pieces of approved evidence and one piece pending review."
         customClass="cropped-left"
         type="image"
       />

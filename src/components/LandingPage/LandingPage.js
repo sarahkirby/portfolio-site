@@ -1,30 +1,44 @@
 import React from 'react'
-import {coverSx1, coverSx2, coverMx1, coverMx2, coverLx1, coverLx2} from 'assets/images/images'
+import {me} from 'assets/images/images'
 
 const LandingPage = props => (
   <section className="landing-page">
-    <div className="landing-page-text">
-      <h1>Sarah Kirby</h1>
-      <p><b>Front-end developer</b> and <b>designer</b> living in <b>London.</b></p>
-    </div>
-    
-    <div className="img-block">
-      <div className="img">
-      <picture>
-        <source
-          media="(min-width: 768px)"
-          srcSet={`${coverLx1}, ${coverLx2} 2x`}
-        />
-        <source
-          media="(min-width: 568px)"
-          srcSet={`${coverMx1}, ${coverMx2} 2x`}
-        />
-        <img
-          src={coverSx1}
-          srcSet={`${coverSx2} 2x`}
-          alt="iPad mockup with.."
-        />
-      </picture>
+    <div className="landing-page-container">
+      <div className="landing-page-text">
+        <h1>
+          <div className="transition-container">
+            <span>Sarah&nbsp;</span>
+          </div>
+          <div className="transition-container">
+            <span>Kirby</span>
+          </div>
+        </h1>
+
+        <p>
+          <b>Front-end developer&nbsp;</b>
+          <br />
+          and <b>designer</b> living&nbsp;
+          <br />
+          in <b>London.</b>
+        </p>
+      </div>
+      
+      <div className="img-block">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcSet={`${me}, ${me} 2x`}
+          />
+          <source
+            media="(min-width: 568px)"
+            srcSet={`${me}, ${me} 2x`}
+          />
+          <img
+            src={me}
+            srcSet={`${me} 2x`}
+            alt="iPad mockup with.."
+          />
+        </picture>
       </div>
     </div>
   </section>

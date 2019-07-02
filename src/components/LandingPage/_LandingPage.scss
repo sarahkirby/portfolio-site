@@ -1,91 +1,207 @@
 .landing-page {
-  height: 100vh;
   background-color: $site-bgc;
+  box-sizing: border-box;
+
+  &-container {
+    height: 100vh;
+  }
 
   &-text {
     padding: 0 $spacing-xs;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    height: 45%;
+    flex-direction: column;
+    height: 35%;
     color: $black;
+
+    h1 .transition-container,
+    h1 .transition-container span {
+      display: inline;
+    }
 
     p {
       font-size: $h4-fs;
     }
+
+    br {
+      display: none;
+    }
   }
 
   .img-block {
-    position: relative;
-    height: 55%;
-    width: 100%;
-    background-color: $grey-400;
-  }
-
-  .img {
-    height: 100%;
-    background-color: #181c1f;
-    overflow: hidden;
+    height: 65%;
+    background-color: #1d1e1e;
 
     img {
-      height: 100%;
-      width: auto;
-    }
-  }
-
-  // Mobile - landscape
-  @media screen and (min-width: 568px) {
-    .img img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
   }
 
-  @media screen and (min-width: 768px) {
-    // max-height: 700px;
+  @media screen and (min-width: 568px) {
+    padding: $spacing-l / 2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 
-    &-text {
-      padding-left: 5rem;
+    &-container {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 0 $spacing-xs;
+      align-items: center;
+      max-width: 88rem;
+      width: 100%;
+      height: 100%;
     }
 
-    .img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: $img-block-w;
+    &-text {
+      padding: 0;
+      display: block;
+      height: auto;
+      z-index: 1;
 
+      h1 {
+        margin-right: -$spacing-l * 3;
+        font-size: 7.5rem;
+        line-height: 1.1;
+        letter-spacing: .3rem;
+        color: #b9c3c6;
+
+        .transition-container,
+        .transition-container span {
+          display: block;
+        }
+
+        .transition-container:last-child {
+          margin-left: 4.5rem;
+        }
+      }
+
+      p {
+        text-align: right;
+      }
+
+      br {
+        display: inline;
+      }
+    }
+
+    .img-block {
+      height: 100%;
+      overflow: hidden;
       img {
+        margin: 0 auto;
+        display: block;
         width: auto;
         height: 100%;
       }
     }
   }
 
-  // Large mobile - landscape
-  @media screen and (min-width: 568px) and (max-height: 500px) {
-    .img img {
-      width: 100%;
-      height: auto;
+  @media screen and (min-width: 668px) {
+    padding: $spacing-l / 2 $spacing-l;
+    height: calc(100vh - #{$spacing-l});
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: 768px) and (min-height: 400px) {
+    padding: 4rem $spacing-l / 2 4rem $spacing-l;
+    height: 100vh;
+
+    &-text h1 {
+      font-size: 10rem;
     }
   }
 
-  // iPad portrait
-  // @media screen and (min-width: 768px) and (min-height: 1024px) {
-  //   height: 50vh;
-  // }
+  @media screen and (min-width: 768px) and (min-height: 1024px) {
+    &-container {
+      height: 50%;
+    }
+  }
 
   @media screen and (min-width: 1024px) {
     margin-right: $spacing-l;
+    padding: 4rem $spacing-l;
     
+    &-container {
+      max-height: 33rem;
+    }
+
     &-text {
+      h1 {
+        font-size: 7.5rem;
+      }
       p {
         font-size: $h5-fs;
       }
     }
+  }
 
-    .img {
-      right: -#{$spacing-l};
+  @media screen and (min-width: 1100px) {
+    &-container {
+      height: 100%;
+      max-height: 50rem;
     }
+  }
+
+  @media screen and (min-width: 1400px) {
+    &-text {
+      h1 {
+        margin-left: 2rem;
+        font-size: 9rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+// Home page load transition
+.landing-page {
+  .transition-container {
+    overflow: hidden;
+
+    span {
+      display: block;
+      transform: translateY(130px);
+      opacity: 0;
+      transition: transform 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear;
+    }
+  }
+
+  p {
+    opacity: 0;
+    transition: opacity .5s linear;
+  }
+
+  .img-block {
+    opacity: 0;
+    transition: opacity .5s linear;
+  }
+
+  @media screen and (min-width: 568px) {
+    .transition-container:last-child span {
+      transition-delay: .2s;
+    }
+
+    p {
+      transition-delay: 1s;
+    }
+  }
+}
+
+.landing-page.pageload-transition-appear-done {
+  .transition-container span {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  p,
+  .img-block {
+    opacity: 1;
   }
 }

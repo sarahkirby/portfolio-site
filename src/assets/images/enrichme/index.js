@@ -1,9 +1,8 @@
-import sx1 from 'assets/images/enrichme/s-x1.jpg'
-import sx2 from 'assets/images/enrichme/s-x2.jpg'
-import mx1 from 'assets/images/enrichme/m-x1.jpg'
-import mx2 from 'assets/images/enrichme/m-x2.jpg'
-import lx1 from 'assets/images/enrichme/l-x1.jpg'
-import lx2 from 'assets/images/enrichme/l-x2.jpg'
+import workCover_sx1 from 'assets/images/enrichme/enrichme-ws-sx1.jpg'
+import workCover_sx2 from 'assets/images/enrichme/enrichme-ws-sx2.jpg'
+import workCover_mx1 from 'assets/images/enrichme/enrichme-ws-mx1.jpg'
+import workCover_lx1 from 'assets/images/enrichme/enrichme-ws-lx1.jpg'
+import workCover_lx2 from 'assets/images/enrichme/enrichme-ws-lx2.jpg'
 import findACourse_s from 'assets/images/enrichme/find-a-course-s.jpg'
 import findACourse_m from 'assets/images/enrichme/find-a-course-m.jpg'
 import findACourse_l from 'assets/images/enrichme/find-a-course-l.jpg'
@@ -51,12 +50,11 @@ import createCourse2 from 'assets/images/enrichme/create-a-course-2.mp4'
 import createCourse2_m from 'assets/images/enrichme/create-a-course-2-m.jpg'
 
 const enrichme = {
-  sx1,
-  sx2,
-  mx1,
-  mx2,
-  lx1,
-  lx2,
+  workCover_sx1,
+  workCover_sx2,
+  workCover_mx1,
+  workCover_lx1,
+  workCover_lx2,
   findACourse_s,
   findACourse_m,
   findACourse_l,

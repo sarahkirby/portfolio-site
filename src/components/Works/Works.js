@@ -9,12 +9,12 @@ const Works = props => (
       <WorkSingle
         title="enrichme"
         link="/enrichme"
-        imgSx1={enrichme.sx1}
-        imgSx2={enrichme.sx2}
-        imgMx1={enrichme.mx1}
-        imgMx2={enrichme.mx2}
-        imgLx1={enrichme.lx1}
-        imgLx2={enrichme.lx2}
+        imgSx1={enrichme.workCover_sx1}
+        imgSx2={enrichme.workCover_sx2}
+        imgMx1={enrichme.workCover_mx1}
+        imgMx2={enrichme.workCover_lx1}
+        imgLx1={enrichme.workCover_lx1}
+        imgLx2={enrichme.workCover_lx2}
         alt="Four mobile screens displaying screenshots of enrichme's website"
         class="enrichme"
       />

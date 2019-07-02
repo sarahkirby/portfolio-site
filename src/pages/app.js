@@ -8,7 +8,7 @@ import Works from 'components/Works/Works'
 import Enrichme from 'pages/works/enrichme'
 import Fwaste from 'pages/works/fwaste'
 import Bcito from 'pages/works/bcito'
-import Footer from 'components/Footer/Footer'
+// import Footer from 'components/Footer/Footer'
 import Error from 'pages/error'
 
 const App = props => {
@@ -35,7 +35,7 @@ const App = props => {
               <Route path="/bcito" component={Bcito} />
               <Route component={Error} />
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </CSSTransition>
       </TransitionGroup>

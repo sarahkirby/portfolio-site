@@ -25,7 +25,7 @@ const WorkSingle = props => (
         />
         <source
           media="(min-width: 568px)"
-          srcSet={`${props.imgMx1}, ${props.imgMx2} 2x`}
+          srcSet={`${props.imgMx1}, ${props.imgLx1} 2x`}
         />
         <img
           src={props.imgSx1}
