@@ -8,7 +8,22 @@ const Header = props => (
     </div>
     
     <div className="img-block">
-      <img className="img" src={props.img} alt={props.alt} />
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcSet={`${props.imgLx1}, ${props.imgLx2} 2x`}
+        />
+        <source
+          media="(min-width: 568px)"
+          srcSet={`${props.imgMx1}, ${props.imgLx1} 2x`}
+        />
+        <img
+          src={props.imgSx1}
+          srcSet={`${props.imgSx2} 2x`}
+          className="img"
+          alt={props.alt}
+        />
+      </picture>
     </div>
   </div>
 )

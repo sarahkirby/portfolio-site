@@ -15,7 +15,11 @@ const Enrichme = props => (
 
     <Header
       title="enrichme"
-      img={enrichme.lx2}
+      imgSx1={enrichme.header_sx1}
+      imgSx2={enrichme.header_sx2}
+      imgMx1={enrichme.header_mx1}
+      imgLx1={enrichme.header_lx1}
+      imgLx2={enrichme.header_lx2}
       alt="Four mobiles on a 45 degree angle display various screens from enrichme's UI, such as an error page, commission slider and creating a course."
     />
 

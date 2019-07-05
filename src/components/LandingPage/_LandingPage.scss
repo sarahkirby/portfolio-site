@@ -31,17 +31,20 @@
   .img-block {
     height: 65%;
     background-color: #1d1e1e;
+    overflow: hidden;
 
     img {
       width: 100%;
-      height: auto;
-      object-fit: cover;
+      height: 100%;
+      object-fit: contain;
+      // height: auto;
+      // object-fit: cover;
     }
   }
 
   @media screen and (min-width: 568px) {
     padding: $spacing-l / 2;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
 
@@ -90,13 +93,13 @@
 
     .img-block {
       height: 100%;
-      overflow: hidden;
-      img {
-        margin: 0 auto;
-        display: block;
-        width: auto;
-        height: 100%;
-      }
+      // overflow: hidden;
+      // img {
+        // margin: 0 auto;
+        // display: block;
+        // width: auto;
+        // height: 100%;
+      // }
     }
   }
 

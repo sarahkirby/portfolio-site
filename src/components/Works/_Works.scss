@@ -2,9 +2,20 @@
   padding: $spacing-xs;
   background-color: $site-bgc;
 
+  .animate-in-container:last-child {
+    .work {
+      margin-bottom: 0;
+    }
+  }
+
   @media screen and (min-width: 1024px) {
     margin: 0 $spacing-l 0 0;
-    padding: 0 $spacing-xs 0 0;
+    padding: 0 $spacing-xs $spacing-xs 0;
+
+    // Override padding for /work page
+    &.works-page {
+      padding-top: $spacing-xs;
+    }
   }
 }
 
@@ -56,6 +67,18 @@
       .line {
         color: darken($bcito, 10%);
       }
+    }
+
+    .work-img {
+      background-color: rgb(206,216,227);
+      background: linear-gradient(90deg, rgba(206,216,227,1) 0%, rgba(201,210,224,1) 100%);
+    }
+
+    .img {
+      margin: 0 auto;
+      display: block;
+      width: auto;
+      height: 100%;
     }
   }
 
@@ -130,7 +153,7 @@
 
     &-img {
       width: calc(#{$img-block-w} - #{$spacing-l});
-      max-height: 25rem;
+      // max-height: 25rem;
       order: 2;
     }
   }

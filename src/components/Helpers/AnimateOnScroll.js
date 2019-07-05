@@ -23,7 +23,7 @@ function AnimateOnScroll({ children }) {
         const isContentInView = isVisible || hasAnimated
         return (
           // Need an intermediary container to check actual visibility, as the animated container may be off screen
-          <div>
+          <div className="animate-in-container">
             <Animated
               inView={isContentInView}
             >

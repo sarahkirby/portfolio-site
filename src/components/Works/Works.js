@@ -1,10 +1,10 @@
 import React from 'react'
 import WorkSingle from 'components/Works/WorkSingle'
 import AnimateOnScroll from 'components/Helpers/AnimateOnScroll'
-import {enrichme, bcito, fwaste} from 'assets/images/images'
+import {enrichme, bcito} from 'assets/images/images'
 
 const Works = props => (
-  <main className="works fade-in"> 
+  <main className={`works fade-in ${props.routeLocation ? 'works-page' : ''}`}> 
     <AnimateOnScroll>
       <WorkSingle
         title="enrichme"
@@ -24,9 +24,12 @@ const Works = props => (
       <WorkSingle
         title="BCITO"
         link="/bcito"
-        imgSx1={bcito.sx1}
-        imgSx2={bcito.sx2}
-        imgLx2={bcito.lx2}
+        imgSx1={bcito.workCover_sx1}
+        imgSx2={bcito.workCover_sx2}
+        imgMx1={bcito.workCover_mx1}
+        imgMx2={bcito.workCover_lx1}
+        imgLx1={bcito.workCover_lx1}
+        imgLx2={bcito.workCover_lx2}
         alt="bcito alt"
         class="bcito"
       />
@@ -34,22 +37,13 @@ const Works = props => (
 
     {/* <AnimateOnScroll>
       <WorkSingle
-        title="Biome"
-        link="/enrichme"
-        alt="biome alt"
-        class="biome"
-      />
-    </AnimateOnScroll> */}
-
-    <AnimateOnScroll>
-      <WorkSingle
         title="F Waste"
         link="/fwaste"
         imgLx2={fwaste.lx2}
         alt="fwaste alt"
         class="fwaste"    
       />
-    </AnimateOnScroll>
+    </AnimateOnScroll> */}
   </main>
 )
 

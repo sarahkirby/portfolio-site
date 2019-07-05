@@ -3,6 +3,11 @@ import workCover_sx2 from 'assets/images/enrichme/enrichme-ws-sx2.jpg'
 import workCover_mx1 from 'assets/images/enrichme/enrichme-ws-mx1.jpg'
 import workCover_lx1 from 'assets/images/enrichme/enrichme-ws-lx1.jpg'
 import workCover_lx2 from 'assets/images/enrichme/enrichme-ws-lx2.jpg'
+import header_sx1 from 'assets/images/enrichme/header-sx1.jpg'
+import header_sx2 from 'assets/images/enrichme/header-sx2.jpg'
+import header_mx1 from 'assets/images/enrichme/header-mx1.jpg'
+import header_lx1 from 'assets/images/enrichme/header-lx1.jpg'
+import header_lx2 from 'assets/images/enrichme/header-lx2.jpg'
 import findACourse_s from 'assets/images/enrichme/find-a-course-s.jpg'
 import findACourse_m from 'assets/images/enrichme/find-a-course-m.jpg'
 import findACourse_l from 'assets/images/enrichme/find-a-course-l.jpg'
@@ -55,6 +60,11 @@ const enrichme = {
   workCover_mx1,
   workCover_lx1,
   workCover_lx2,
+  header_sx1,
+  header_sx2,
+  header_mx1,
+  header_lx1,
+  header_lx2,
   findACourse_s,
   findACourse_m,
   findACourse_l,

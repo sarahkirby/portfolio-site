@@ -1,6 +1,8 @@
-import sx1 from 'assets/images/bcito/s-x1.jpg'
-import sx2 from 'assets/images/bcito/s-x2.jpg'
-import lx2 from 'assets/images/bcito/l-x5.jpg'
+import workCover_sx1 from 'assets/images/bcito/bcito-ws-sx1.jpg'
+import workCover_sx2 from 'assets/images/bcito/bcito-ws-sx2.jpg'
+import workCover_mx1 from 'assets/images/bcito/bcito-ws-mx1.jpg'
+import workCover_lx1 from 'assets/images/bcito/bcito-ws-lx1.jpg'
+import workCover_lx2 from 'assets/images/bcito/bcito-ws-lx2.jpg'
 import apprenticeDash_s from 'assets/images/bcito/apprentice-dash-s.png'
 import apprenticeDash_m from 'assets/images/bcito/apprentice-dash-m.png'
 import apprenticeDash_l from 'assets/images/bcito/apprentice-dash-l.png'
@@ -35,9 +37,11 @@ import overview from 'assets/images/bcito/overview.mp4'
 import overview_m from 'assets/images/bcito/overview-m.jpg'
 
 const bcito = {
-  sx1,
-  sx2,
-  lx2,
+  workCover_sx1,
+  workCover_sx2,
+  workCover_mx1,
+  workCover_lx1,
+  workCover_lx2,
   apprenticeDash_s,
   apprenticeDash_m,
   apprenticeDash_l,
