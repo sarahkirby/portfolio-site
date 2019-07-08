@@ -78,7 +78,7 @@ const Enrichme = props => (
 
     <Description
       title="All in one place"
-      description="With the ability to both run and attend courses, we needed a simple interface where you could manage either of the two. The navigation follows the same pattern, whether you select 'courses you are running' or 'courses you are booked to attend', the subnav lets you select either upcoming or past course information."
+      description="With the ability to both run and attend courses, we needed a simple interface where you could manage either of the two. The navigation follows the same pattern, whether you select 'courses you are running' or 'courses you are booked to attend', the subnavigation lets you select either upcoming or past course information."
       customClass="w-100"
     />
 

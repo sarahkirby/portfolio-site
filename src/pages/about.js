@@ -13,7 +13,7 @@ const About = props => (
       <p><b>I’m Sarah Kirby, a front-end developer and designer from New Zealand who has recently moved to London.</b></p>
       <p>A creative at heart, I studied design for three years and went on to study web development. This is where I found my place, being creative in a technical way.</p>
 
-      <p>I'm currently looking for opportunites where I can further develop my skills in modern web technologies such as React & SASS, and help build beautiful, interactive, user-centered applications.</p>
+      <p>I'm currently looking for opportunities where I can further develop my skills in modern web technologies such as React & SASS, and help build beautiful, interactive, user-centered applications.</p>
       {/* <div>
         <a href="/about" className="btn">
           Curriculum Vitae <i className="fas fa-download"></i>
