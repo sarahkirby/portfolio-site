@@ -15,7 +15,11 @@ const Bcito = props => (
 
     <Header
       title="BCITO"
-      img={bcito.lx2}
+      imgSx1={bcito.header_sx1}
+      imgSx2={bcito.header_sx2}
+      imgMx1={bcito.workCover_lx1}
+      imgLx1={bcito.workCover_lx1}
+      imgLx2={bcito.workCover_lx2}
       alt="A light blue background with a white desktop computer displays the file library UI from the BCITO application."
     />
 

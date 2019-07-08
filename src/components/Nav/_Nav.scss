@@ -100,30 +100,49 @@
     background-color: $site-bgc;
 
     ul {
-      font-family: 'Zefani';
-      font-size: $h2-fs;
-      color: $gold;
       text-align: center;
       list-style: none;
     }
 
-    li {
+    li:not(.nav-link-contact) {
       margin-bottom: 1rem;
-    }
-
-    a {
+      font-family: 'Zefani';
+      font-size: $h2-fs;
       color: $gold;
-      &:visited {
-        color: $gold;
-      }
 
-      &:hover {
-        color: lighten($gold, 10%);
+      a {
+        color: $gold;
+        &:visited {
+          color: $gold;
+        }
+
+        &:hover {
+          color: lighten($gold, 10%);
+        }
       }
     }
 
     .active {
       border-bottom: 1px solid $gold;
+    }
+  }
+
+  .nav-link-contact {
+    margin-top: $spacing-l - 1rem;
+
+    a {
+      margin-bottom: 1rem;
+      display: block;
+      color: $black;
+      letter-spacing: .05em;
+
+      &:hover {
+        opacity: .6;
+      }
+    }
+
+    i {
+      padding-right: $spacing-xs / 2;
     }
   }
 
@@ -154,12 +173,26 @@
       justify-content: flex-start;
 
       ul {
+        margin-top: $spacing-xs;
         margin-left: 8rem;
         text-align: left;
 
-        li {
+        li:not(.nav-link-contact) {
           margin-bottom: .25rem;
         }
+      }
+    }
+
+    .nav-link-contact {
+      margin-top: 2rem;
+
+      a {
+        margin-right: $spacing-xs - .5rem;
+        display: inline-block;
+      }
+
+      i {
+        padding-right: $spacing-xs / 3;
       }
     }
   }

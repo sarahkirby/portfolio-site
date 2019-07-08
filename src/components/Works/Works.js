@@ -30,7 +30,7 @@ const Works = props => (
         imgMx2={bcito.workCover_lx1}
         imgLx1={bcito.workCover_lx1}
         imgLx2={bcito.workCover_lx2}
-        alt="bcito alt"
+        alt="A light blue background with a white desktop computer displays the file library UI from the BCITO application."
         class="bcito"
       />
     </AnimateOnScroll>
