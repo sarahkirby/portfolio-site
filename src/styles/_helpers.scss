@@ -44,6 +44,21 @@
   }
 }
 
+// Link
+.link {
+  color: $gold;
+  border-bottom: 1px solid $gold;
+
+  i {
+    margin-left: .2em;
+    font-size: .9em;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
 // Custom colours
 .enrichme .title {
   color: $enrichme;
