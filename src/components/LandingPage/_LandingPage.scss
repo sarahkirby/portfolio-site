@@ -66,6 +66,7 @@
       padding: 0;
       display: block;
       height: auto;
+      -ms-grid-row-align: center;
       z-index: 1;
 
       h1 {
@@ -96,6 +97,7 @@
 
     .img-block {
       height: 100%;
+      -ms-grid-column: 2;
       // overflow: hidden;
       // img {
         // margin: 0 auto;
