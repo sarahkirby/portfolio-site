@@ -50,7 +50,9 @@
 
     &-container {
       margin: 0 auto;
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
       grid-gap: 0 $spacing-xs;
       align-items: center;
