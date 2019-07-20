@@ -59,13 +59,25 @@
   }
 }
 
+// Colours
+.gold {
+  color: $gold;
+}
+
 // Custom colours
 .enrichme .title {
   color: $enrichme;
 }
 
-.bcito .title {
-  color: $bcito;
+.bcito {
+  .title {
+    color: $bcito;
+  }
+
+  .block__visual {
+    background-color: rgb(206,216,227);
+    background: linear-gradient(90deg, rgba(206,216,227,1) 0%, rgba(201,210,224,1) 100%);
+  }
 }
 
 .fwaste .title {

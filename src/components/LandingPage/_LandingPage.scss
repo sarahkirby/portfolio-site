@@ -1,215 +1,211 @@
-.landing-page {
+.LandingPage {
   background-color: $site-bgc;
   box-sizing: border-box;
+}
 
-  &-container {
-    height: 100vh;
+.LandingPage__wrapper {
+  height: 100vh;
+}
+
+.LandingPage__content {
+  padding: 0 $spacing-xs;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 35%;
+  color: $black;
+}
+
+.LandingPage__transition {
+  display: inline;
+}
+
+.LandingPage__info {
+  font-size: $h4-fs;
+
+  br {
+    display: none;
   }
+}
 
-  &-text {
-    padding: 0 $spacing-xs;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 35%;
-    color: $black;
+.LandingPage__visual {
+  height: 65%;
+  background-color: #1d1e1e;
+  overflow: hidden;
+}
 
-    h1 .transition-container,
-    h1 .transition-container span {
-      display: inline;
-    }
+.LandingPage__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
-    p {
-      font-size: $h4-fs;
-    }
-
-    br {
-      display: none;
-    }
-  }
-
-  .img-block {
-    height: 65%;
-    background-color: #1d1e1e;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      // height: auto;
-      // object-fit: cover;
-    }
-  }
-
-  @media screen and (min-width: 568px) {
+@media screen and (min-width: 568px) {
+  .LandingPage {
     padding: $spacing-l / 2;
     min-height: 100vh;
     display: flex;
     align-items: center;
+  }
 
-    &-container {
-      margin: 0 auto;
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
-      grid-gap: 0 $spacing-xs;
-      align-items: center;
-      max-width: 88rem;
-      width: 100%;
-      height: 100%;
-      overflow: hidden; // For Safari who renders height differently (this element (the parent) requires a fixed height rather than a percentage)
-    }
+  .LandingPage__wrapper {
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0 $spacing-xs;
+    align-items: center;
+    max-width: 88rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; // For Safari who renders height differently (this element (the parent) requires a fixed height rather than a percentage)
+  }
 
-    &-text {
-      padding: 0;
-      display: block;
-      height: auto;
-      -ms-grid-row-align: center;
-      z-index: 1;
+  .LandingPage__content {
+    padding: 0;
+    display: block;
+    height: auto;
+    -ms-grid-row-align: center;
+    z-index: 1;
+  }
 
-      h1 {
-        margin-right: -$spacing-l * 3;
-        font-size: 7.5rem;
-        line-height: 1.1;
-        letter-spacing: .3rem;
-        color: #b9c3c6;
+  .LandingPage__title {
+    margin-right: -$spacing-l * 3;
+    font-size: 7.5rem;
+    line-height: 1.1;
+    letter-spacing: .3rem;
+    color: #b9c3c6;
+  }
 
-        .transition-container,
-        .transition-container span {
-          display: block;
-        }
+  .LandingPage__transition {
+    display: block;
 
-        .transition-container:last-child {
-          margin-left: 4.5rem;
-        }
-      }
-
-      p {
-        text-align: right;
-      }
-
-      br {
-        display: inline;
-      }
-    }
-
-    .img-block {
-      height: 100%;
-      -ms-grid-column: 2;
-      // overflow: hidden;
-      // img {
-        // margin: 0 auto;
-        // display: block;
-        // width: auto;
-        // height: 100%;
-      // }
+    &:last-child {
+      margin-left: 4.5rem;
     }
   }
 
-  @media screen and (min-width: 668px) {
+  .LandingPage__info {
+    text-align: right;
+    
+    br {
+      display: inline;
+    }
+  }
+
+  .LandingPage__visual {
+    height: 100%;
+    -ms-grid-column: 2;
+  }
+}
+
+@media screen and (min-width: 668px) {
+  .LandingPage {
     padding: $spacing-l / 2 $spacing-l;
     height: calc(100vh - #{$spacing-l});
     box-sizing: border-box;
   }
+}
 
-  @media screen and (min-width: 768px) and (min-height: 400px) {
+@media screen and (min-width: 768px) and (min-height: 400px) {
+  .LandingPage {
     padding: 4rem $spacing-l / 2 4rem $spacing-l;
     height: 100vh;
-
-    &-text h1 {
-      font-size: 10rem;
-    }
   }
 
-  @media screen and (min-width: 768px) and (min-height: 1024px) {
-    &-container {
-      height: 50%;
-    }
+  .LandingPage__title {
+    font-size: 10rem;
   }
+}
 
-  @media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  .LandingPage__wrapper {
+    height: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .LandingPage {
     margin-right: $spacing-l;
     padding: 4rem $spacing-l;
-    
-    &-container {
-      max-height: 33rem;
-    }
-
-    &-text {
-      h1 {
-        font-size: 7.5rem;
-      }
-      p {
-        font-size: $h5-fs;
-      }
-    }
+  }
+  
+  .LandingPage__wrapper {
+    max-height: 33rem;
   }
 
-  @media screen and (min-width: 1100px) {
-    &-container {
-      height: 100%;
-      max-height: 50rem;
-    }
+  .LandingPage__title {
+    font-size: 7.5rem;
   }
 
-  @media screen and (min-width: 1400px) {
-    &-text {
-      h1 {
-        margin-left: 2rem;
-        font-size: 9rem;
-      }
+  .LandingPage__info {
+    font-size: $h5-fs;
+  }
+}
 
-      p {
-        font-size: 1.6rem;
-      }
-    }
+@media screen and (min-width: 1100px) {
+  .LandingPage__wrapper {
+    height: 100%;
+    max-height: 50rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .LandingPage__title {
+    margin-left: 2rem;
+    font-size: 9rem;
+  }
+
+  .LandingPage__info {
+    font-size: 1.6rem;
   }
 }
 
 // Home page load transition
-.landing-page {
-  .transition-container {
+  .LandingPage__transition {
     overflow: hidden;
-
-    span {
-      display: block;
-      transform: translateY(130px);
-      opacity: 0;
-      transition: transform 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear;
-    }
   }
 
-  p {
+  .LandingPage__transition-content {
+    opacity: 0;
+    transition: transform 1.2s cubic-bezier(0.7, 0, 0.3, 1), opacity 1s linear;
+  }
+
+  .LandingPage__info {
     opacity: 0;
     transition: opacity .5s linear;
   }
 
-  .img-block {
+  .LandingPage__visual {
     opacity: 0;
     transition: opacity .5s linear;
   }
 
-  @media screen and (min-width: 568px) {
-    .transition-container:last-child span {
-      transition-delay: .2s;
-    }
+@media screen and (min-width: 568px) {
+  .LandingPage__transition-content {
+    display: block;
+    transform: translateY(130px);
+  }
 
-    p {
-      transition-delay: 1s;
-    }
+  .LandingPage__transition-content--2 {
+    transition-delay: .2s;
+  }
+
+  .LandingPage__info {
+    transition-delay: 1s;
   }
 }
 
-.landing-page.pageload-transition-appear-done {
-  .transition-container span {
+.pageload-transition-appear-done {
+  .LandingPage__transition,
+  .LandingPage__transition-content {
     transform: translateY(0);
     opacity: 1;
   }
 
-  p,
-  .img-block {
+  .LandingPage__info,
+  .LandingPage__visual {
     opacity: 1;
   }
 }

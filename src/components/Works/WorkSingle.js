@@ -5,19 +5,19 @@ import {Link} from 'react-router-dom'
 const WorkSingle = props => (
   <Link
     to={props.link}
-    className={`work ${props.class}`}
+    className={`Work ${props.class}`}
   >
-    <div className="work-text">
-      <h1 className="title">
+    <div className="Work__content">
+      <h1 className="Work__title title">
         {props.title}
       </h1>
-      <span className="line"/>
-      <h6 className="subtitle">
+      <span className="Work__line"/>
+      <h6 className="Work__subtitle subtitle">
         View work
       </h6>
     </div>
 
-    <div className="work-img">
+    <div className="Work__visual block__visual">
       <picture>
         <source
           media="(min-width: 768px)"
@@ -30,7 +30,7 @@ const WorkSingle = props => (
         <img
           src={props.imgSx1}
           srcSet={`${props.imgSx2} 2x`}
-          className="img"
+          className="Work__img"
           alt={props.alt}
         />
       </picture>
@@ -44,7 +44,6 @@ WorkSingle.propTypes = {
   imgSx1: PropTypes.string,
   imgSx2: PropTypes.string,
   imgMx1: PropTypes.string,
-  imgMx2: PropTypes.string,
   imgLx1: PropTypes.string,
   imgLx2: PropTypes.string,
   alt: PropTypes.string.isRequired,

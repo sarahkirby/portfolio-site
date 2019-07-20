@@ -172,7 +172,7 @@ const Enrichme = props => (
 
     <Description
       title="Illustrations"
-      description="To remove barriers for on boarding users, enrichme adopted a ‘Pay what you can’ business model. To engage users I created an interactive commission slider. As the commission rate increases, the illustration changes to reflect our gratitude for their generosity."
+      description="To remove barriers for onboarding users, enrichme adopted a ‘Pay what you can’ business model. To engage users I created an interactive commission slider. As the commission rate increases, the illustration changes to reflect our gratitude for their generosity."
       customClass="block-description-img--l"
     >
       <BrowserMockup

@@ -1,92 +1,88 @@
 // About page
-.about {
+.About {
   min-height: 100vh;
+}
 
-  &-info {
-    padding: $spacing-l $spacing-xs $spacing-xs;
-  }
+.About__content {
+  padding: $spacing-l $spacing-xs $spacing-xs;
+}
 
-  h1 {
-    margin-bottom: $spacing-xs / 2;
+.About__title {
+  margin-bottom: $spacing-xs / 2;
+}
 
-    span {
-      color: $gold;
-    }
-  }
+.About__info {
+  margin-bottom: $spacing-xs / 2;
 
-  p {
-    margin-bottom: $spacing-xs / 2;
-
-    &:last-of-type {
-      margin-bottom: $spacing-xs;
-    }
+  &:last-of-type {
+    margin-bottom: $spacing-xs;
   }
 
   b {
     font-size: 2rem;
   }
+}
 
-  .link {
-    margin-bottom: $spacing-xs;
-    display: inline-block;
-  }
+.About__link {
+  margin-bottom: $spacing-xs;
+  display: inline-block;
+}
 
-  &-visual {
-    background-color: #1e1f1f;
-    width: 100%;
+.About__visual {
+  background-color: #1e1f1f;
+  width: 100%;
+}
 
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
+.About__img {
+  width: 100%;
+  height: auto;
+}
 
-  @media screen and (min-width: 768px) {
-    p {
-      margin-bottom: $spacing-xs / 3;
-    }
+@media screen and (min-width: 768px) {
+  .About__info {
+    margin-bottom: $spacing-xs / 3;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .about-page .nav .nav-btn .btn-bar {
+  .AboutPage .Nav__btnbar {
     background-color: $gold;
     opacity: .8;
   }
 
-  .about {
+  .About {
     display: flex;
+  }
 
-    &-info {
-      padding: $spacing-l $spacing-l $spacing-xs;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 50vw;
-    }
+  .About__content {
+    padding: $spacing-l $spacing-l $spacing-xs;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+  }
 
-    h1 {
-      margin-bottom: $spacing-xs / 4;
-      font-size: $h2-fs;
-    }
+  .About__title {
+    margin-bottom: $spacing-xs / 4;
+    font-size: $h2-fs;
+  }
 
-    b {
-      font-size: $h5-fs;
-    }
+  .About__info b {
+    font-size: $h5-fs;
+  }
 
-    &-visual {
-      position: relative;
-      width: 50vw;
-      overflow: hidden;
+  .About__visual {
+    position: relative;
+    width: 50vw;
+    overflow: hidden;
+  }
 
-      img {
-        position: absolute;
-        bottom: 0;
-        left: -50px;
-        width: auto;
-        height: 100%;
-      }
-    }
+  .About__img {
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    width: auto;
+    height: 100%;
   }
 }
 

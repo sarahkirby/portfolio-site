@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 
 const Header = props => (
   <div className="header">
-    <div className="header-title">
+    <div className="header__title">
       <h1 className="title">{props.title}</h1>
     </div>
     
-    <div className="img-block">
+    <div className="header__visual block__visual">
       <picture>
         <source
           media="(min-width: 768px)"
@@ -20,7 +20,7 @@ const Header = props => (
         <img
           src={props.imgSx1}
           srcSet={`${props.imgSx2} 2x`}
-          className="img"
+          className="header__img"
           alt={props.alt}
         />
       </picture>

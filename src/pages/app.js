@@ -16,7 +16,7 @@ const App = props => {
   const randomBgColor = bgColor[Math.floor(Math.random() * bgColor.length)]
 
   return (
-    <div className={`app ${props.location.pathname === '/about' ? 'about-page' : ''}`}>
+    <div className={`App ${props.location.pathname === '/about' ? 'AboutPage' : ''}`}>
       <Nav />
       <TransitionGroup>
         <CSSTransition

@@ -1,199 +1,199 @@
-.nav {
+.Nav {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   background-color: $white;
   z-index: 2;
+}
 
-  &-logo {
-    padding: .8rem 1.2rem 0;
-    display: inline-block;
-    font-size: 3.2rem;
-    color: $navy;
-    z-index: 3;
-    span {
-      color: $gold;
-    }
+.Nav__logo {
+  padding: .8rem 1.2rem 0;
+  display: inline-block;
+  font-size: 3.2rem;
+  color: $navy;
+  z-index: 3;
+}
+
+.Nav__btn-wrapper {
+  padding: 1.4rem 1rem .8rem;
+  float: right;
+}
+
+.Nav__btn {
+  position: relative;
+  height: 30px;
+  width: 32px;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), opacity .6s ease;
+  pointer-events: all;
+  z-index: 3;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.Nav__btnbar {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  left: 6px;
+  height: 2px;
+  width: auto;
+  margin-top: -1px;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
+    opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: $navy;
+
+  &--1 {
+    transform: translateY(-6px);
   }
 
-  .nav-btn {
-    padding: 1.4rem 1rem .8rem;
-    float: right;
-
-    button {
-      position: relative;
-      height: 30px;
-      width: 32px;
-      border: 0;
-      border-radius: 0;
-      background-color: transparent;
-      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-      pointer-events: all;
-      z-index: 3;
-
-      &:hover {
-        opacity: .6;
-      }
-    }
-
-    .btn-bar {
-      position: absolute;
-      top: 50%;
-      right: 6px;
-      left: 6px;
-      height: 2px;
-      width: auto;
-      margin-top: -1px;
-      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
-        opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
-        background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-      background-color: $navy;
-
-      &--1 {
-        transform: translateY(-6px);
-      }
-
-      &--2 {
-        transform-origin: 100% 50%;
-        transform: scaleX(0.8);
-      }
-
-      &--3 {
-        transform: translateY(6px);
-      }
-    }
-
-    .is-active {
-      transform: rotate(-180deg);
-      .btn-bar {
-        transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
-          opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
-          background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-
-        &--1 {
-          transform: rotate(45deg);
-        }
-
-        &--2 {
-          opacity: 0;
-        }
-
-        &--3 {
-          transform: rotate(-45deg);
-        }
-      }
-    }
+  &--2 {
+    transform-origin: 100% 50%;
+    transform: scaleX(0.8);
   }
 
-  &.is-open {
-    height: 100%;
-    background-color: $white;
+  &--3 {
+    transform: translateY(6px);
   }
+}
 
-  nav {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $site-bgc;
+.is-active {
+  transform: rotate(-180deg);
+  .Nav__btnbar {
+    transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1),
+      opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+      background-color 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-    ul {
-      text-align: center;
-      list-style: none;
+    &--1 {
+      transform: rotate(45deg);
     }
 
-    li:not(.nav-link-contact) {
-      margin-bottom: 1rem;
-      font-family: 'Zefani';
-      font-size: $h2-fs;
-      color: $gold;
-
-      a {
-        color: $gold;
-        &:visited {
-          color: $gold;
-        }
-
-        &:hover {
-          color: lighten($gold, 10%);
-        }
-      }
+    &--2 {
+      opacity: 0;
     }
 
-    .active {
-      border-bottom: 1px solid $gold;
+    &--3 {
+      transform: rotate(-45deg);
     }
   }
+}
 
-  .nav-link-contact {
-    margin-top: $spacing-l - 1rem;
+.Nav.is-open {
+  height: 100%;
+  background-color: $white;
+}
 
-    a {
-      margin-bottom: 1rem;
-      display: block;
-      color: $black;
-      letter-spacing: .05em;
+.Nav__menu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $site-bgc;
+}
 
-      &:hover {
-        opacity: .6;
-      }
-    }
+.Nav__list {
+  text-align: center;
+  list-style: none;
+}
 
-    i {
-      padding-right: $spacing-xs / 2;
-    }
+.Nav__listitem {
+  margin-bottom: 1rem;
+  font-family: 'Zefani';
+  font-size: $h2-fs;
+  color: $gold;
+}
+
+.Nav__link {
+  color: $gold;
+
+  &:visited {
+    color: $gold;
   }
 
-  // When nav overlay is open
-  @media screen and (min-width: 1024px) {
+  &:hover {
+    color: lighten($gold, 10%);
+  }
+
+  &--active {
+    border-bottom: 1px solid $gold;
+  }
+}
+
+.Nav__listitem--contact {
+  margin-top: $spacing-l - 1rem;
+}
+
+.Nav__link--contact {
+  margin-bottom: 1rem;
+  display: block;
+  color: $black;
+  letter-spacing: .05em;
+
+  &:hover {
+    opacity: .6;
+  }
+}
+
+.Nav__linkicon {
+  padding-right: $spacing-xs / 2;
+}
+
+// When nav overlay is open
+@media screen and (min-width: 1024px) {
+  .Nav {
     display: flex;
     justify-content: space-between;
     background-color: transparent;
+  }
 
-    &-logo {
-      font-size: $h3-fs;
-    }
+  .Nav__logo {
+    font-size: $h3-fs;
+  }
 
-    .nav-btn {
-      float: none;
-      order: 2;
-    }
+  .Nav__btn-wrapper {
+    float: none;
+    order: 2;
+  }
 
-    &-logo,
-    .nav-btn {
-      padding: 0;
-      margin-top: 1.2rem;
-      min-width: $spacing-l;
-      text-align: center;
-    }
+  .Nav__logo,
+  .Nav__btn-wrapper {
+    padding: 0;
+    margin-top: 1.2rem;
+    min-width: $spacing-l;
+    text-align: center;
+  }
 
-    nav {
-      justify-content: flex-start;
+  .Nav__menu {
+    justify-content: flex-start;
+  }
 
-      ul {
-        margin-top: $spacing-xs;
-        margin-left: 8rem;
-        text-align: left;
+  .Nav__list {
+    margin-top: $spacing-xs;
+    margin-left: 8rem;
+    text-align: left;
+  }
 
-        li:not(.nav-link-contact) {
-          margin-bottom: .25rem;
-        }
-      }
-    }
+  .Nav__listitem {
+    margin-bottom: .25rem;
+  }
 
-    .nav-link-contact {
-      margin-top: 2rem;
+  .Nav__listitem--contact {
+    margin-top: 2rem;
+  }
 
-      a {
-        margin-right: $spacing-xs - .5rem;
-        display: inline-block;
-      }
+  .Nav__link--contact {
+    margin-right: $spacing-xs - .5rem;
+    display: inline-block;
+  }
 
-      i {
-        padding-right: $spacing-xs / 3;
-      }
-    }
+  .Nav__linkicon {
+    padding-right: $spacing-xs / 3;
   }
 }

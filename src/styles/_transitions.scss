@@ -63,10 +63,7 @@
   z-index: 999;
 }
 
-.fade-enter,
-.fade-enter-active,
-.fade-exit,
-.fade-exit-active {
+.fade-enter {
   .route-transition-animation {
     animation: 1.6s cubic-bezier(0.86, 0, 0.07, 1);
     animation-name: routeTransition;

@@ -1,174 +1,151 @@
-.works {
+.Works {
   padding: $spacing-xs;
   background-color: $site-bgc;
-
-  .animate-in-container:last-child {
-    .work {
-      margin-bottom: 0;
-    }
-  }
 
   @media screen and (min-width: 1024px) {
     margin: 0 $spacing-l 0 0;
     padding: 0 $spacing-xs $spacing-xs 0;
 
     // Override padding for /work page
-    &.works-page {
+    &.WorksPage {
       padding-top: $spacing-xs;
     }
   }
 }
 
 // Work Single
-.work {
+.Work {
   margin-bottom: $spacing-xs;
   display: flex;
   flex-direction: column;
+}
 
-  &-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+.Work__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.Work__title {
+  font-size: $h3-fs;
+}
+
+.Work__subtitle {
+  display: inline-block;
+}
+
+.Work__line {
+  display: none;
+  width: 3rem;
+  height: 1px;
+  margin: .6rem 1.5rem .4rem 0;
+  background-color: lighten($black, 40%);
+}
+
+.Work__visual {
+  margin-bottom: 1rem;
+  width: calc(100vw - (#{$spacing-xs} * 2));
+  height: calc(100vw - (#{$spacing-xs} * 2));
+  order: -1;
+  overflow: hidden;
+  background-color: $black;
+}
+
+.Work__img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 568px) {
+  .Work__visual {
+    max-height: 22rem;
   }
+}
 
-  .title {
-    font-size: $h3-fs;
-  }
-
-  .subtitle {
-    display: inline-block;
-  }
-
-  // Custom colour and hover states
-  &.enrichme {
-    .subtitle,
-    .line {
-      color: $enrichme;
-    }
-
-    .work-text:hover {
-      .title,
-      .subtitle,
-      .line {
-        color: darken($enrichme, 10%);
-      }
-    }
-  }
-
-  &.bcito {
-    .subtitle,
-    .line {
-      color: $bcito;
-    }
-
-    .work-text:hover {
-      .title,
-      .subtitle,
-      .line {
-        color: darken($bcito, 10%);
-      }
-    }
-
-    .work-img {
-      background-color: rgb(206,216,227);
-      background: linear-gradient(90deg, rgba(206,216,227,1) 0%, rgba(201,210,224,1) 100%);
-    }
-
-    .img {
-      margin: 0 auto;
-      display: block;
-      width: auto;
-      height: 100%;
-    }
-  }
-
-  &.fwaste {
-    .subtitle,
-    .line {
-      color: $fwaste;
-    }
-
-    .work-text:hover {
-      .title,
-      .subtitle,
-      .line {
-        color: darken($fwaste, 10%);
-      }
-    }
-  }
-
-  &-text:hover .line {
-    width: 4.4rem;
-  }
-
-  .line {
-    display: none;
-    width: 3rem;
-    height: 1px;
-    margin: .6rem 1.5rem .4rem 0;
-    background-color: lighten($black, 40%);
-  }
-
-  &-img {
-    margin-bottom: 1rem;
-    width: calc(100vw - (#{$spacing-xs} * 2));
-    height: calc(100vw - (#{$spacing-xs} * 2));
-    order: -1;
-    overflow: hidden;
-    background-color: $black;
-  }
-
-  .img {
-    width: 100%;
-    height: auto;
-  }
-
-  @media screen and (min-width: 568px) {
-    &-img {
-      max-height: 22rem;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .Work {
     position: relative;
     flex-direction: row;
     justify-content: flex-end;
+  }
 
-    &-text {
-      margin-left: $spacing-l - 2rem;
-      display: block;
-      position: absolute;
-      top: 20%;
-      left: 0;
-      z-index: 1;
-    }
+  .Work__content {
+    margin-left: $spacing-l - 2rem;
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 1;
+  }
 
-    .title {
-      font-size: $h1-fs;
-    }
+  .Work__title {
+    font-size: $h1-fs;
+  }
 
-    .line {
-      display: inline-block;
-    }
+  .Work__line {
+    display: inline-block;
+  }
 
-    &-img {
-      width: calc(#{$img-block-w} - #{$spacing-l});
-      // max-height: 25rem;
-      order: 2;
+  .Work__visual {
+    width: calc(#{$img-block-w} - #{$spacing-l});
+    order: 2;
+  }
+}
+
+
+// Custom colour and hover states
+.enrichme {
+  .Work__subtitle,
+  .Work__line {
+    color: $enrichme;
+  }
+
+  .Work__content:hover {
+    .Work__title,
+    .Work__subtitle,
+    .Work__line {
+      color: darken($enrichme, 10%);
     }
   }
 }
 
+.bcito {
+  .Work__subtitle,
+  .Work__line {
+    color: $bcito;
+  }
+
+  .Work__content:hover {
+    .Work__title,
+    .Work__subtitle,
+    .Work__line {
+      color: darken($bcito, 10%);
+    }
+  }
+
+  .Work__img {
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    height: 100%;
+  }
+}
+
+.Work__content:hover .Work__line {
+  width: 4.4rem;
+}
+
+
 // Scroll animation
 .out {
-  .work {
+  .Work {
     opacity: 0;
     transform: translateY(100px);
   }
 }
 
 .in {
-  .work {
+  .Work {
     opacity: 1;
     transform: translateY(0);
     transition: transform 800ms ease, opacity 800ms ease;
@@ -177,44 +154,50 @@
 
 @media screen and (min-width: 768px) {
   .out {
-    .work {
+    .Work {
       opacity: 1;
       transform: translateY(0);
     }
 
-    .title,
-    .line,
-    .subtitle {
+    .Work__title,
+    .Work__subtitle,
+    .Work__line {
       opacity: 0;
       transform: translateY(100px);
     }
 
-    .work-img {
+    .Work__visual {
       opacity: 0;
       transform: translateY(50px);
     }
   }
   
   .in {
-    .title,
-    .line,
-    .subtitle,
-    .work-img {
+    .Work__title,
+    .Work__subtitle,
+    .Work__visual,
+    .Work__line {
       opacity: 1;
       transform: translateY(0);
     }
 
-    .title {
+    .Work__title {
       transition: transform 800ms ease, opacity 800ms ease, color 300ms ease;
     }
 
-    .line,
-    .subtitle {
+    .Work__subtitle,
+    .Work__line {
       transition: transform 1000ms ease, opacity 1000ms ease, color 300ms ease, width 500ms ease;
     }
 
-    .work-img {
+    .Work__visual {
       transition: transform 500ms ease, opacity 500ms ease;
     }
+  }
+}
+
+.animate-in-container:last-child {
+  .Work {
+    margin-bottom: 0;
   }
 }

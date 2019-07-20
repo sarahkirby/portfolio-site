@@ -20,6 +20,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .App {
+    margin-left: $spacing-l;
+  }
+}
+
 main {
   display: block;
 }
@@ -67,8 +73,7 @@ h2 {
   font-size: $h2-fs;
 }
 
-h3,
-.h3 {
+h3 {
   font: normal #{$h3-fs}/1.4 'Zefani', sans-serif;
   letter-spacing: .1rem;
 
@@ -84,10 +89,4 @@ h5 {
 
 h6 {
   font-size: $h6-fs;
-}
-
-@media screen and (min-width: 1024px) {
-  .app {
-    margin-left: $spacing-l;
-  }
 }

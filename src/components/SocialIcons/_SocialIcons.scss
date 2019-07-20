@@ -1,4 +1,4 @@
-.social-icons {
+.Social {
   display: none;
   position: fixed;
   bottom: 0;
@@ -7,22 +7,24 @@
   width: $spacing-l;
   text-align: center;
   z-index: 4;
+}
   
-  a {
-    margin-bottom: 3.2rem;
-    color: $gold;
+.Social__link {
+  margin-bottom: 3.2rem;
+  color: $gold;
 
-    &:hover {
-      transform: translateX(10px);
-      opacity: .8;
-    }
+  &:hover {
+    transform: translateX(10px);
+    opacity: .8;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Social {
+    display: flex;
   }
 
-  @media screen and (min-width: 1024px) {
-    display: flex;
-
-    a {
-      font-size: 1.125rem;
-    }
+  .Social__link {
+    font-size: 1.125rem;
   }
 }

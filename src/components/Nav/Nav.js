@@ -16,23 +16,23 @@ class Nav extends React.Component {
   render() {
     const {toggle} = this.state
     return (
-      <header className={'nav ' + (toggle ? 'is-open' : '')}>
+      <header className={`Nav ${toggle ? 'is-open' : ''}`}>
         <NavLink to="/">
-          <h1 className="nav-logo">
+          <h1 className="Nav__logo">
             sk
-            <span>.</span>
+            <span className="gold">.</span>
           </h1>
         </NavLink>
 
-        <div className="nav-btn">
+        <div className="Nav__btn-wrapper">
           <button
             onClick={e => this.toggleMenu(e)}
-            className={(toggle ? 'is-active' : '')}
+            className={`Nav__btn ${toggle ? 'is-active' : ''}`}
             aria-label="Menu"
           >
-            <span className="btn-bar btn-bar--1" />
-            <span className="btn-bar btn-bar--2" />
-            <span className="btn-bar btn-bar--3" />
+            <span className="Nav__btnbar Nav__btnbar--1" />
+            <span className="Nav__btnbar Nav__btnbar--2" />
+            <span className="Nav__btnbar Nav__btnbar--3" />
           </button>
         </div>
 
@@ -42,48 +42,57 @@ class Nav extends React.Component {
           classNames="fade-35"
           unmountOnExit
         >
-          <nav>
-            <ul>
-              <li>
+          <nav className="Nav__menu">
+            <ul className="Nav__list">
+              <li className="Nav__listitem">
                 <NavLink exact
-                  activeClassName="active"
+                  activeClassName="Nav__link--active"
+                  className="Nav__link"
                   to="/"
                   onClick={e => this.toggleMenu(e)}
                 >
                   Home
                 </NavLink>
               </li>
-              <li>
+              <li className="Nav__listitem">
                 <NavLink
-                  activeClassName="active"
+                  activeClassName="Nav__link--active"
+                  className="Nav__link"
                   to="/about"
                   onClick={e => this.toggleMenu(e)}
                 >
                   About
                 </NavLink>
               </li>
-              <li>
+              <li className="Nav__listitem">
                 <NavLink
-                  activeClassName="active"
+                  activeClassName="Nav__link--active"
+                  className="Nav__link"
                   to="/work"
                   onClick={e => this.toggleMenu(e)}
                 >
                   Work
                 </NavLink>
               </li>
-              <li className="nav-link-contact">
-                <a href="mailto:sk.irby@icloud.com">
+              <li className="Nav__listitem--contact">
+                <a
+                  href="mailto:sk.irby@icloud.com"
+                  className="Nav__link--contact"
+                >
                   <i
-                    className="far fa-envelope"
+                    className="Nav__linkicon far fa-envelope"
                     aria-hidden="true"
                     role="presentation"
                   />
                   sk.irby@icloud.com
                 </a>
 
-                <a href="tel:+447562781121">
+                <a
+                  href="tel:+447562781121"
+                  className="Nav__link--contact"
+                >
                   <i
-                    className="fas fa-mobile-alt"
+                    className="Nav__linkicon fas fa-mobile-alt"
                     aria-hidden="true"
                     role="presentation"
                   />
